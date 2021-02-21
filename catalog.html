@@ -69,7 +69,19 @@
         <form action="https://echo.htmlacademy.ru" method="POST">
           
           <!--ползунок стоимости-->
-          <div></div>
+          <fieldset>
+            <legend>Стоимость</legend>
+            <div>
+              <input type="range" name="price" id="price" min="0" max="10000" value="5000">
+            </div>
+            <div>
+              <label for="price-min">от</label>
+              <input type="number" name="price-min" id="price-min" value="0">
+              <label for="price-max">до</label>
+              <input type="number" name="price-max" id="price-max" value="5000">
+            </div>
+          </fieldset>
+          
           
           <!--выбор цвета-->
           <fieldset>
@@ -102,7 +114,7 @@
             <legend>Bluetooth</legend>
             <ul>
               <li>
-                <input type="radio" name="btooth" value="yes" id="filter-bt-yes">
+                <input type="radio" name="btooth" value="yes" id="filter-bt-yes" checked>
                 <label for="filter-bt-yes">Да</label>
               </li>
               <li>
@@ -260,19 +272,19 @@
           <ul>
             <li>
               <a href="#">
-                <img src="./img/footer-socials-facebook.svg" width="32" height="32" alt="Facebook">
+                <img src="./img/footer-socials-facebook.svg" width="32" height="32" alt="наша страница в Facebook">
                 Facebook
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./img/footer-socials-instagramm.svg" width="32" height="32" alt="Instagramm">
+                <img src="./img/footer-socials-instagramm.svg" width="32" height="32" alt="наша страница в Instagramm">
                 Instagramm
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./img/footer-socials-twitter.svg" width="32" height="32" alt="Twitter">
+                <img src="./img/footer-socials-twitter.svg" width="32" height="32" alt="наша страница в Twitter">
                 Twitter
               </a>
             </li>
