@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Девайс</title>
@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body>
+  <body class="page-body">
 
     <!-- Основная шапка с навигацией -->
-    <header>
-      <nav>
-        <a href="#">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="#">
           <!--<img src="./img/logo-main.svg" width="163" height="35" alt="DEVICE">-->
           <h3 hidden>Интернет-магазин Device</h3>
           <svg width="163" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,18 +29,18 @@
         </div>
         
         <!--Верхнее меню-->
-        <div class="top-menu">
-          <a href="blank.html">Войти</a>
-          <a href="blank.html">Сравнить</a>
-          <a href="blank.html">Корзина</a>
+        <div class="header-top-menu">
+          <a class="login-link" href="blank.html">Войти</a>
+          <a class="comparison" href="blank.html">Сравнить</a>
+          <a class="cart" href="blank.html">Корзина</a>
         </div>
         
         <!--Нижнее меню-->
-        <div class="bottom-menu">
+        <div class="header-bottom-menu">
           <ul>
             <li>
               <a href="catalog.html">Каталог товаров</a>
-              <div class="sub-catalogue">
+              <div>
                 <ul>
                   <li><a href="blank.html">Виртуальная реальность</a></li>
                   <li><a href="blank.html">Моноподы для селфи</a></li>
@@ -60,24 +60,24 @@
     </header>
 
     <!-- Контент-раздел-->
-    <main>
+    <main class="container">
       <h1 hidden>Интернет-магазин Девайс</h1>
       
       <!--Превью гаджетов-->
-      <section class="gadget-preview">
+      <section>
         <h2 hidden>Гаджет-превью</h2>
         
         <!--первый слайд с гаджетом-->
-        <div class="first-slide">
+        <div class="slider first-slide">
           <h3 hidden>Самый необходимый монопод</h3>
           <img src="./img/index-slider-1-monopod.png" width="384" height="486" alt="Огроменный монопод">
-          <p>Делай селфи,<br>
+          <p class="text-header">Делай селфи,<br>
           как Бен Стиллер!</p>
           <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <a href="">Подробнее</a>
+          <a class="button" href="#">Подробнее</a>
   
-          <table class="gadget-description">
+          <table class="gadget-info">
             <tr>
               <td>8,5 м</td>
               <td>5 кг</td>
@@ -92,16 +92,16 @@
         </div>
         
         <!--второй слайд с гаджетом-->
-        <div class="second-slide">
+        <div class="slider second-slide">
           <h3 hidden>Фитнес-трекер, который поможет осуществить мечты</h3>
           <img src="./img/index-slider-2-fitness-tracker.png" width="345" height="485"  alt="Отличный фитнес-трекер">
-          <p>Худеем<br>
+          <p class="text-header">Худеем<br>
           правильно!</p>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы <br>  
           не пропускать занятия и соблюдать диету.</p>
-          <a href="">Подробнее</a>
+          <a class="button" href="#">Подробнее</a>
   
-          <table class="gadget-description">
+          <table class="gadget-info">
             <tr>
               <td>48 часов</td>
             </tr>
@@ -112,17 +112,17 @@
         </div>
 
         <!--третий слайд с гаджетом-->
-        <div class="third-slide">
+        <div class="slider third-slide">
           <h3 hidden>Коптер, который необходим любому агенту Mi6</h3>
           <img src="./img/index-slider-3-copter.png" width="526" height="334" alt="Коптер от Кью">
-          <p>Порхает как бабочка,<br>
+          <p class="text-header">Порхает как бабочка,<br>
           жалит как пчела!</p>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
           мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a href="">Подробнее</a>
+          <a class="button" href="#">Подробнее</a>
   
-          <table class="gadget-description">
+          <table class="gadget-info">
             <tr>
               <td>800 м</td>
               <td>50 м</td>
@@ -147,32 +147,32 @@
       <section class="gadget-list">
         <h2 hidden>Меню разделов</h2>
         <ul>
-          <li>
+          <li class="gadget-menu v-reality">
             <a href="blank.html">
               <span>Виртуальная реальность</span>
             </a>
           </li>
-          <li>
+          <li class="gadget-menu monopod">
             <a href="blank.html">
               <span>Моноподы для селфи</span>
             </a>
           </li>
-          <li>
+          <li class="gadget-menu action-cam">
             <a href="blank.html">
               <span>Экшн-камеры</span>
             </a>
           </li>
-          <li>
+          <li class="gadget-menu fitness-tracker">
             <a href="blank.html">
               <span>Фитнес-браслеты</span>
             </a>
           </li>
-          <li>
+          <li class="gadget-menu smart-watch">
             <a href="blank.html">
               <span>Умные часы</span>
             </a>            
           </li>
-          <li>
+          <li class="gadget-menu copter">
             <a href="blank.html">
               <span>Квадрокоптеры</span>
             </a>            
@@ -181,26 +181,26 @@
       </section>
 
       <!--Доставка, гарантия, кредит-->
-      <section>
+      <section class="delivery-guaranties-credit">
         <h2 hidden>Доставка, гарантии и кредит</h2>
-        <ul class="del-guar-cred-nav">
-          <li id="delivery">Доставка</li>
-          <li id="guarantees">Гарантия</li>
-          <li>Кредит</li>
+        <ul>
+          <li class="button button-black" id="delivery">Доставка</li>
+          <li class="button button-black" id="guarantees">Гарантия</li>
+          <li class="button button-black">Кредит</li>
         </ul>
-        <ul class="del-guar-cred-description">
-          <li>
-            <h3>Доставка</h3>
+        <ul>
+          <li class="delivery-info">
+            <h3 class="text-header">Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li>
-            <h3>Гарантия</h3>
+          <li class="guarantee-info">
+            <h3 class="text-header">Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —<br>
             не переживайте, мы выдадим вам новый.<br>
             Товар, не дом, конечно же.</p>
           </li>
-          <li>
-            <h3>Кредит</h3>
+          <li class="credit-info">
+            <h3 class="text-header">Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты
               подберут для вас наиболее выгодные<br>
               условия кредита. Выгодные для нашего банка, разумеется.</p>
@@ -209,10 +209,10 @@
       </section>
 
       <!--Логотипы-->
-      <section class="logos">
+      <section class="gadget-brands">
         <h2 hidden>Производители гаджетов</h2>
         <ul>
-          <li>
+          <li class="brand-logo">
             <a href="blank.html">
               <img src="./img/logo-1-DJi.svg" width="260" height="100" alt="гаджеты от бренда DJi">
               <!--<h3 hidden>гаджеты от бренда DJi</h3>
@@ -227,7 +227,7 @@
               </svg>-->
             </a>
           </li>
-          <li>
+          <li class="brand-logo">
             <a href="blank.html">
               <img src="./img/logo-2-SPGadjets.svg" width="260" height="100" alt=" гаджеты от бренда SPGadgets">
               <!--<h3 hidden>гаджеты от бренда SPGadgets</h3>
@@ -242,7 +242,7 @@
               </svg>-->                             
             </a>
           </li>
-          <li>
+          <li class="brand-logo">
             <a href="blank.html">
               <img src="./img/logo-3-GoPro.svg" width="260" height="100" alt="гаджеты от бренда GoPro">
               <!--<h3 hidden>гаджеты от бренда GoPro</h3>
@@ -257,7 +257,7 @@
               </svg>-->          
             </a>
           </li>
-          <li>
+          <li class="brand-logo">
             <a href="blank.html">
               <img src="./img/logo-4-Vive.svg" width="260" height="100" alt="гаджеты от бренда Vive">
               <!--<h3 hidden>гаджеты от бренда Vive</h3>
@@ -277,7 +277,7 @@
 
       <!--О нас-->
       <section class="about-us">
-        <h2>О нас</h2>
+        <h2 class="text-header">О нас</h2>
         <p>
           Огромный выбор гаджетов не оставит равнодушным гика, <br>
           который есть в каждом из нас.
@@ -290,17 +290,17 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="blank.html">Подробнее о нас</a>
+        <a class="button" href="blank.html">Подробнее о нас</a>
       </section>
 
       <!--Контакты-->
       <section class="contacts">
-        <h2 id="how-to-find-us">Контакты</h2>
+        <h2  class="text-header" id="how-to-find-us">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         
         <!--Карта-->
         <img src="./img/map-small.jpg" width="560" height="222" alt="Расположение нашего офиса">
-        <a href="blank.html">Напишите нам</a>
+        <a class="button" href="blank.html">Напишите нам</a>
       </section>
       
     </main>
@@ -309,7 +309,7 @@
     <footer>
 
       <div>
-        <a href="#">
+        <a class="main-footer-logo" href="#">
           <!--<img src="./img/logo-footer-main.svg" width="163" height="35" alt="DEVICE">-->
           <h3 hidden>Интернет-магазин Device</h3>
           <svg width="163" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -322,13 +322,13 @@
           </svg>
         </a>
         <div class="top-footer">
-          <a href="blank.html">Войти</a>
-          <a href="blank.html">Сравнить</a>
-          <a href="blank.html">Корзина</a>
+          <a class="login-link" href="blank.html">Войти</a>
+          <a class="comparison" href="blank.html">Сравнить</a>
+          <a class="cart" href="blank.html">Корзина</a>
         </div>
       </div>
 
-      <div>
+      <div class="footer-contacts">
         <address>г.Москва, ул.Строителей, 15</address>
         <div class="bottom-footer">
           <ul>
@@ -337,17 +337,17 @@
             <li><a href="./index.html#how-to-find-us">Контакты</a></li>
           </ul>
         </div>
-        <p class="phone-num">
+        <p class="footer-contacts-phone">
           <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         </p>
       </div>
       
       <div>
-        <section class="social-networks-footer">
+        <section class="footer-socials">
           <h2 hidden>Мы в социальных сетях</h2>
           <ul>
             <li>
-              <a href="#">
+              <a class="footer-socials-button" href="#">
                 <!--<img src="./img/footer-socials-facebook.svg" width="32" height="32" alt="Facebook">-->
                 <h3 hidden>Наша страница в Facebook</h3>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -356,7 +356,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a class="footer-socials-button" href="#">
                 <!--<img src="./img/footer-socials-instagramm.svg" width="32" height="32" alt="Instagramm">-->
                 <h3 hidden>Наша страница в Instagramm</h3>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -365,7 +365,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a class="footer-socials-button" href="#">
                 <!--<img src="./img/footer-socials-twitter.svg" width="32" height="32" alt="Twitter">-->
                 <h3 hidden>Наша страница в Twitter</h3>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -375,7 +375,7 @@
             </li>
           </ul>
         </section>
-        <a href="#">
+        <a class="footer-copyright" href="#">
           <!--<img src="./img/logo-footer-small.svg" width="26.94" height="34" alt="DEVICE">-->
           <h3 hidden>Онлайн-школа HTMLAcademy</h3>
           <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -392,26 +392,26 @@
     </footer>
     
     <!--Всплывающая карта-->
-    <section class="large-map">
+    <section class="modal large-map">
       <h2 hidden>Разположение нашего офиса</h2>
       <img src="./img/map-big.jpg" width="960" height="572.72" alt="Расположение нашего офиса">
-      <button type="button">Закрыть</button>
+      <button class="large-map-close-button" type="button">Закрыть</button>
     </section>
     
 
     <!--высплывающая форма обратной связи с магазином-->
-    <section class="client-feedback">
+    <section class="modal client-feedback">
       <h2 hidden>Форма обратной связи</h2>
-      <form action=" https://echo.htmlacademy.ru" method="POST">
+      <form class="feedback-form" action=" https://echo.htmlacademy.ru" method="POST">
         <label for="name-input">Ваше имя:</label>
-        <input type="text" name="name-lastname" placeholder="Имя Фамилия" required id="name-input">
+        <input class="feedback-form-item" type="text" name="name-lastname" placeholder="Имя Фамилия" required id="name-input">
         <label for="e-mail-input">Ваш e-mail:</label>
-        <input type="email" name="e-mail" placeholder="email@example.com" required id="e-mail-input">
+        <input class="feedback-form-item" type="email" name="e-mail" placeholder="email@example.com" required id="e-mail-input">
         <label for="textmessage-input">Текст письма:</label>
-        <textarea name="message" id="textmessage-input" cols="50" rows="10" placeholder="В свободной форме" required></textarea>
-        <button class="orange-button" type="submit">Отправить</button>
+        <textarea class="feedback-form-item" name="message" id="textmessage-input" cols="50" rows="10" placeholder="В свободной форме" required></textarea>
+        <button class="button" type="submit">Отправить</button>
       </form>
-      <button type="button">Закрыть</button>
+      <button class="client-feedback-close-button" type="button">Закрыть</button>
     </section>
     
 
