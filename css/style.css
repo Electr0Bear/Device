@@ -1,0 +1,63 @@
+/*fonts*/
+@font-face {
+  font-family: "Gilroy";
+  src: 
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: 
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* variables*/
+:root {
+  --basic-white: #fff;
+  --basic-black: #000;
+  --basic-dark: #363636;
+  --basic-grey: #464646;
+  --basic-half-gray: #7E7E7E;
+  --basic-grey-light: #E5E5E5;
+  --special-yellow: #f7e296;
+  --special-yellow-dark: #F0C52E;
+  --special-green: #91C92F;
+}
+
+/*general*/
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  
+}
+
