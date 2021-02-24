@@ -205,6 +205,16 @@ img {
   color: var(--transparent-black-06);
 }
 
+/*about us*/
+.delivery-options {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+  list-style-image: url("../img/bulletpoint.svg");
+}
+
 /*delivery guaranties credit*/
 .delivery-guaranties-credit {
   background-image: url("../img/delivery-gray-rectangle.svg");
