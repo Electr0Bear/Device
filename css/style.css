@@ -55,13 +55,15 @@
   --popup-form-field: #F2F2F2;
   --popup-form-field-error: #F6DADA;
 }
-
+* {
+  border: 1px solid red;
+}
 
 /*general*/
 .page-body {
   margin: 0;
   padding: 0;
-  max-width: 1440px;
+  max-width: 100%;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -80,11 +82,15 @@ img {
   height: auto;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /*header*/
 .main-header {
-  width: 1160px;
   height: 206px;
-  margin: 20px 140px 0px 140px;
   color: var(--basic-black);
   line-height: 20px;
 }
@@ -100,12 +106,10 @@ img {
 .main-navigation {
   height: 186px;
   background-color: var(--special-yellow);
-  margin-top: 20px;
 }
 
 .main-header-logo {
-  position: relative;
-  top: -20px;
+  
 }
 
 .header-bottom-menu-list {
@@ -157,6 +161,9 @@ img {
 }
 
 /*slider*/
+.slider {
+   
+}
 
 .slider-button {
   width: 220px;
@@ -246,6 +253,23 @@ img {
   background-image: url("../img/credit-guy-icon.svg");
   background-repeat: no-repeat;
 }
+
+/*brand logos*/
+.brand-logo {
+  list-style-type: none;
+}
+
+.brand-logo a {
+  filter: grayscale(100%);
+  opacity: 0.2; 
+}
+
+.brand-logo a:hover {
+  filter: none;
+  opacity: 1; 
+}
+
+
 
 /*footer*/
 .main-footer {
@@ -337,6 +361,10 @@ img {
 }
 
 /*pop-ups*/
+.modal {
+  text-align: center;
+}
+
 .client-feedback {
   font-family: "Gilroy";
   font-style: normal;
@@ -382,4 +410,12 @@ img {
 .modal-close-button {
   border: 0; 
   background: transparent;
+}
+
+.modal-close-button:hover circle {
+  opacity: 1;
+}
+
+.modal-close-button:active circle {
+  opacity: 0.3;
 }
