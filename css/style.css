@@ -55,9 +55,8 @@
   --popup-form-field: #F2F2F2;
   --popup-form-field-error: #F6DADA;
 }
-* {
-  border: 1px solid red;
-}
+
+
 
 /*general*/
 .page-body {
@@ -162,7 +161,8 @@ img {
 
 /*slider*/
 .slider {
-   
+   width: 1024px;
+   /*height: 526px;*/
 }
 
 .slider-button {
@@ -349,6 +349,10 @@ img {
 
 .footer-contacts-phone a {
   color: var(--basic-white);
+  list-style-type: none;
+}
+
+.footer-socials li {
   list-style-type: none;
 }
 
