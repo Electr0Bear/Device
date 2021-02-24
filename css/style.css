@@ -208,11 +208,16 @@ img {
 /*delivery guaranties credit*/
 .delivery-guaranties-credit {
   background-image: url("../img/delivery-gray-rectangle.svg");
-
 }
 
 .delivery-guaranties-credit-buttons li {
   list-style-type: none;
+}
+
+.button-black:active {
+  background-image: none;
+  background-color: var(--basic-black);
+  color: var(--special-yellow-dark);
 }
 
 .delivery-guaranties-credit-info {
