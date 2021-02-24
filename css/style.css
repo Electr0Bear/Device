@@ -361,12 +361,16 @@ img {
   background-color: var(--basic-white);
   border: 2px solid var(--special-yellow);
 }
+/*
+.feedback-form-item:valid {
+  background-color: var(--popup-form-field);
+}
 
 .feedback-form-item:invalid {
   background-color: var(--popup-form-field-error);
-  
+  outline: none;
 }
-
+*/
 .modal-button {
   border: none;
 }
