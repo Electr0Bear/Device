@@ -37,25 +37,26 @@
         
         <!--Нижнее меню-->
         <div class="header-bottom-menu">
-          <ul>
-            <li>
+          <ul class="header-bottom-menu-list">
+            <li class="header-catalog">
               <a href="catalog.html">Каталог товаров</a>
-              <div>
-                <ul>
-                  <li><a href="blank.html">Виртуальная реальность</a></li>
-                  <li><a href="blank.html">Моноподы для селфи</a></li>
-                  <li><a href="blank.html">Экшн-камеры</a></li>
-                  <li><a href="blank.html">Фитнес-браслеты</a></li>
-                  <li><a href="blank.html">Умные часы</a></li>
-                  <li><a href="blank.html">Квадрокоптеры</a></li>
-                </ul>
-              </div>
             </li>
-            <li><a href="#delivery">Доставка</a></li>
-            <li><a href="#guarantees">Гарантия</a></li>
-            <li><a href="#how-to-find-us">Контакты</a></li>
-          </ul>
+            <li class="header-delivery"><a href="#delivery">Доставка</a></li>
+            <li class="header-guarantee"><a href="#guarantees">Гарантия</a></li>
+            <li class="header-contacts"><a href="#how-to-find-us">Контакты</a></li>
+          </ul> 
         </div> 
+
+        <div class="header-subcatalog">
+          <ul class="header-subcatalog-list">
+            <li><a href="blank.html">Виртуальная реальность</a></li>
+            <li><a href="blank.html">Моноподы для селфи</a></li>
+            <li><a href="blank.html">Экшн-камеры</a></li>
+            <li><a href="blank.html">Фитнес-браслеты</a></li>
+            <li><a href="blank.html">Умные часы</a></li>
+            <li><a href="blank.html">Квадрокоптеры</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -64,19 +65,20 @@
       <h1 hidden>Интернет-магазин Девайс</h1>
       
       <!--Превью гаджетов-->
-      <section>
+      <section class="slider">
         <h2 hidden>Гаджет-превью</h2>
         
         <!--первый слайд с гаджетом-->
-        <div class="slider first-slide">
+        <div class="first-slide">
           <h3 hidden>Самый необходимый монопод</h3>
           <img src="./img/index-slider-1-monopod.png" width="384" height="486" alt="Огроменный монопод">
           <p class="text-header">Делай селфи,<br>
           как Бен Стиллер!</p>
           <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <a class="button" href="#">Подробнее</a>
-  
+          
+          <a class="button slider-button" href="#">Подробнее</a>
+        
           <table class="gadget-info">
             <tr>
               <td>8,5 м</td>
@@ -99,7 +101,12 @@
           правильно!</p>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы <br>  
           не пропускать занятия и соблюдать диету.</p>
-          <a class="button" href="#">Подробнее</a>
+          
+          <a href="#">
+            <div class="button slider-button">
+              <span>Подробнее</span>
+            </div>
+          </a>
   
           <table class="gadget-info">
             <tr>
@@ -120,7 +127,12 @@
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
           мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a class="button" href="#">Подробнее</a>
+
+          <a href="#">
+            <div class="button slider-button">
+              <span>Подробнее</span>
+            </div>
+          </a>
   
           <table class="gadget-info">
             <tr>
@@ -183,29 +195,31 @@
       <!--Доставка, гарантия, кредит-->
       <section class="delivery-guaranties-credit">
         <h2 hidden>Доставка, гарантии и кредит</h2>
-        <ul>
-          <li class="button button-black" id="delivery">Доставка</li>
-          <li class="button button-black" id="guarantees">Гарантия</li>
-          <li class="button button-black">Кредит</li>
-        </ul>
-        <ul>
-          <li class="delivery-info">
-            <h3 class="text-header">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="guarantee-info">
-            <h3 class="text-header">Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —<br>
-            не переживайте, мы выдадим вам новый.<br>
-            Товар, не дом, конечно же.</p>
-          </li>
-          <li class="credit-info">
-            <h3 class="text-header">Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты
-              подберут для вас наиболее выгодные<br>
-              условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </li>
-        </ul>
+        <div class="delivery-guaranties-credit-buttons">  
+          <a href=""><div class="button button-black" id="delivery">Доставка</div></a>
+          <a href=""><div class="button button-black" id="guarantees">Гарантия</div></a>
+          <a href=""><div class="button button-black">Кредит</div></a>
+        </div>
+        <div>
+          <ul class="delivery-guaranties-credit-info">
+            <li class="delivery-info">
+              <h3 class="text-header">Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="guarantee-info">
+              <h3 class="text-header">Гарантия</h3>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —<br>
+              не переживайте, мы выдадим вам новый.<br>
+              Товар, не дом, конечно же.</p>
+            </li>
+            <li class="credit-info">
+              <h3 class="text-header">Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты
+                подберут для вас наиболее выгодные<br>
+                условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </li>
+          </ul>
+        </div> 
       </section>
 
       <!--Логотипы-->
