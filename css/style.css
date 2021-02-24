@@ -52,12 +52,9 @@
   --special-yellow: #f7e296;
   --special-yellow-dark: #F0C52E;
   --special-green: #91C92F;
+  --popup-form-field: #F2F2F2;
 }
 
-/*TEST BORDER*/
-* {
-  border: 1px solid red;
-}
 
 /*general*/
 .page-body {
@@ -336,4 +333,33 @@ img {
 
 .footer-socials-button:active path {
   fill-opacity: 0.1;
+}
+
+/*pop-ups*/
+.client-feedback {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+} 
+
+.feedback-form-item {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.4);
+  background-color: var(--popup-form-field);
+  border: 0;
+}
+
+.modal-button:active {
+  color: var(--transparent-black-03);
+}
+
+.modal-close-button {
+  border: 0; 
+  background: transparent;
 }
