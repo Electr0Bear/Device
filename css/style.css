@@ -40,7 +40,11 @@
 /* variables*/
 :root {
   --basic-white: #fff;
+  --transparent-white-03: rgba(255, 255, 255, 0.3);
+  --transparent-white-07: rgba(255, 255, 255, 0.7);
   --basic-black: #000;
+  --transparent-black-03: rgba(0, 0, 0, 0.3);
+  --transparent-black-06: rgba(0, 0, 0, 0.6);
   --basic-dark: #363636;
   --basic-grey: #464646;
   --basic-half-gray: #7E7E7E;
@@ -161,7 +165,7 @@ img {
 }
 
 .slider-button:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--transparent-black-03)
 }
 
 .gadget-info {
@@ -196,20 +200,125 @@ img {
   background-color: var(--special-yellow);
 }
 
-.gadget-menu span {
-  background-color: var(--basic-white);
-}
-
 .gadget-menu:hover {
   background-color: var(--special-yellow-dark);
+  color: var(--transparent-black-06);
 }
 
 /*delivery guaranties credit*/
 .delivery-guaranties-credit {
-  
+  background-image: url("../img/delivery-gray-rectangle.svg");
+
 }
 
+.delivery-guaranties-credit-buttons li {
+  list-style-type: none;
+}
 
 .delivery-guaranties-credit-info {
   list-style-type: none;
+}
+
+.delivery-info {
+  background-image: url("../img/delivery-guy-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.guarantee-info {
+  background-image: url("../img/guarantee-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.credit-info {
+  background-image: url("../img/credit-guy-icon.svg");
+  background-repeat: no-repeat;
+}
+
+/*footer*/
+.main-footer {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+  
+}
+
+.main-footer-logo {
+
+}
+
+.main-footer-logo:hover {
+  opacity: 0.6;
+}
+
+.main-footer-logo:active {
+  opacity: 0.3;
+}
+
+.footer-copyright-logo{
+  
+}
+
+.footer-copyright-logo:hover  {
+  opacity: 0.6;
+}
+
+.footer-copyright-logo:active {
+  opacity: 0.3;
+}
+
+.top-footer a {
+  color: var(--transparent-white-07);
+}
+
+.top-footer a:hover {
+  color: var(--basic-white);
+}
+
+.top-footer a:active {
+  color: var(--transparent-white-03)
+}
+
+.footer-contacts address{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.bottom-footer-list li{
+  list-style-type: none;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  
+/* identical to box height */
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.bottom-footer-list a {
+  color: var(--basic-white);
+}
+
+.bottom-footer-list a:hover {
+  color: var(--transparent-white-07);
+}
+
+.bottom-footer-list a:active {
+  color: var(--transparent-white-03);
+}
+
+.footer-contacts-phone a {
+  color: var(--basic-white);
+  list-style-type: none;
+}
+
+.footer-socials-button:hover path {
+  fill-opacity: 0.6;
+}
+
+.footer-socials-button:active path {
+  fill-opacity: 0.1;
 }
