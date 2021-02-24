@@ -53,6 +53,7 @@
   --special-yellow-dark: #F0C52E;
   --special-green: #91C92F;
   --popup-form-field: #F2F2F2;
+  --popup-form-field-error: #F6DADA;
 }
 
 
@@ -353,6 +354,21 @@ img {
   color: rgba(0, 0, 0, 0.4);
   background-color: var(--popup-form-field);
   border: 0;
+  outline: none;
+}
+
+.feedback-form-item:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--special-yellow);
+}
+
+.feedback-form-item:invalid {
+  background-color: var(--popup-form-field-error);
+  
+}
+
+.modal-button {
+  border: none;
 }
 
 .modal-button:active {
