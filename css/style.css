@@ -1,5 +1,3 @@
-
-
 /*fonts*/
 @font-face {
   font-family: "Gilroy";
@@ -63,12 +61,12 @@
   margin: 0;
   padding: 0;
   max-width: 100%;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
-  font-style: normal;
+  line-height: 20px;
   color: var(--basic-black);
-  background-color: var(--basic-white);  
+  background-color: var(--basic-white);
 }
 
 a {
@@ -88,8 +86,7 @@ img {
 }
 
 .text-header {
-  font-family: "Gilroy";
-  font-style: normal;
+  font-family: "Gilroy", Helvetica, sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -98,15 +95,14 @@ img {
 /*buttons*/
 .button {
   color: var(--basic-black);
-  font-family: "Gilroy";
-  font-style: normal;
+  font-family: "Gilroy", Helvetica, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
   height: 40px;
   text-align: center;
-  
+
   background: url("../img/button-rectangle.svg") 50% 50% repeat-x;
 
   /* identical to box height */
@@ -124,9 +120,7 @@ img {
   line-height: 20px;
 }
 
-.main-header-logo {
-  
-}
+.main-header-logo {}
 
 /*header client section*/
 .main-header a {
@@ -194,7 +188,7 @@ img {
 
 /*header product section*/
 .header-bottom-menu-list {
-  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Helvetica, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -214,8 +208,8 @@ img {
 
 /*slider*/
 .slider {
-   width: 1024px;
-   /*height: 526px;*/
+  width: 1024px;
+  /*height: 526px;*/
 }
 
 .slider-button {
@@ -227,8 +221,7 @@ img {
 }
 
 .gadget-info {
-  font-family: "Gilroy";
-  font-style: normal;
+  font-family: "Gilroy", Helvetica, sans-serif;
   font-weight: 300;
   text-align: left;
 }
@@ -252,8 +245,7 @@ img {
 }
 
 .gadget-menu-label {
-  font-family: Gilroy;
-  font-style: normal;
+  font-family: "Gilroy", Helvetica, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -268,7 +260,6 @@ img {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-
 
 .v-reality-icon {
   background-image: url("../img/popular-vr.svg");
@@ -302,11 +293,9 @@ img {
   opacity: 0.3;
 }
 
-
 /*about us*/
 .delivery-options {
-  font-family: Gilroy;
-  font-style: normal;
+  font-family: "Gilroy", Helvetica, sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -354,26 +343,21 @@ img {
 
 .brand-logo a {
   filter: grayscale(100%);
-  opacity: 0.2; 
+  opacity: 0.2;
 }
 
 .brand-logo a:hover {
   filter: none;
-  opacity: 1; 
+  opacity: 1;
 }
-
-
 
 /*footer*/
 .main-footer {
   background-color: var(--basic-dark);
   color: var(--basic-white);
-  
 }
 
-.main-footer-logo {
-
-}
+.main-footer-logo {}
 
 .main-footer-logo:hover {
   opacity: 0.6;
@@ -383,11 +367,9 @@ img {
   opacity: 0.3;
 }
 
-.footer-copyright-logo{
-  
-}
+.footer-copyright-logo {}
 
-.footer-copyright-logo:hover  {
+.footer-copyright-logo:hover {
   opacity: 0.6;
 }
 
@@ -407,23 +389,21 @@ img {
   color: var(--transparent-white-03)
 }
 
-.footer-contacts address{
-  font-family: Open Sans;
-  font-style: normal;
+.footer-contacts address {
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
 }
 
-.bottom-footer-list li{
+.bottom-footer-list li {
   list-style-type: none;
-  font-family: Gilroy;
-  font-style: normal;
+  font-family: "Gilroy", Helvetica, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-  
-/* identical to box height */
+
+  /* identical to box height */
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
@@ -463,16 +443,14 @@ img {
 }
 
 .client-feedback {
-  font-family: "Gilroy";
-  font-style: normal;
+  font-family: "Gilroy", Helvetica, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-} 
+}
 
 .feedback-form-item {
-  font-family: "Open Sans";
-  font-style: normal;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -486,6 +464,7 @@ img {
   background-color: var(--basic-white);
   border: 2px solid var(--special-yellow);
 }
+
 /*
 .feedback-form-item:valid {
   background-color: var(--popup-form-field);
@@ -505,7 +484,7 @@ img {
 }
 
 .modal-close-button {
-  border: 0; 
+  border: 0;
   background: transparent;
 }
 
@@ -515,4 +494,11 @@ img {
 
 .modal-close-button:active circle {
   opacity: 0.3;
+}
+
+/*CATALOG*/
+
+/*breadcrumbs navigation*/
+.breadcrumbs-nav {
+  list-style-type: none;
 }
