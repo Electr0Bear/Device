@@ -245,19 +245,59 @@ img {
 /*gadget menu*/
 .gadget-menu {
   list-style-type: none;
+}
+
+.gadget-menu-label {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
-  background-color: var(--special-yellow);
+  color: var(--basic-black)
 }
 
-.gadget-menu:hover {
-  background-color: var(--special-yellow-dark);
-  color: var(--transparent-black-06);
+.gadget-menu-icon {
+  width: 160px;
+  height: 160px;
+  background-color: var(--special-yellow);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
+
+
+.v-reality-icon {
+  background-image: url("../img/popular-vr.svg");
+}
+
+.monopod-icon {
+  background-image: url("../img/popular-monopods.svg");
+}
+
+.action-cam-icon {
+  background-image: url("../img/popular-action-cam.svg");
+}
+
+.fitness-tracker-icon {
+  background-image: url("../img/popular-fitness-tracker.svg");
+}
+
+.smart-watch-icon {
+  background-image: url("../img/popular-smart-watch.svg");
+}
+
+.copter-icon {
+  background-image: url("../img/popular-copter.svg");
+}
+
+.gadget-menu:hover .gadget-menu-icon {
+  background-color: var(--special-yellow-dark);
+}
+
+.gadget-menu:active .gadget-menu-label {
+  opacity: 0.3;
+}
+
 
 /*about us*/
 .delivery-options {
