@@ -87,6 +87,36 @@ img {
   padding: 0 20px;
 }
 
+.text-header {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+/*buttons*/
+.button {
+  color: var(--basic-black);
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  height: 40px;
+  text-align: center;
+  
+  background: url("../img/button-rectangle.svg") 50% 50% repeat-x;
+
+  /* identical to box height */
+  letter-spacing: 0.2em;
+}
+
+.button:hover {
+  background-color: var(--special-yellow-dark);
+}
+
 /*header*/
 .main-header {
   height: 206px;
@@ -94,6 +124,7 @@ img {
   line-height: 20px;
 }
 
+/*header client section*/
 .main-header a {
   color: var(--basic-black);
 }
@@ -115,6 +146,49 @@ img {
   
 }
 
+/*searchbar*/
+.searchbar-form-field {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.searchbar-form-field::placeholder {
+  opacity: 0.3;
+}
+
+.searchbar-form-field:hover::placeholder {
+  opacity: 0.6;
+}
+
+.searchbar-form-field:focus::placeholder {
+  color: transparent;
+}
+
+.searchbar-form-field:focus {
+  border-bottom: 2px solid var(--basic-black);
+}
+
+.searchbar-button {
+  font-weight: inherit;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 2px solid var(--basic-black);
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.searchbar-button:hover {
+  color: var(--basic-white);
+  background-color: var(--basic-black);
+}
+
+.searchbar-button:active {
+  color: var(--transparent-white-03);
+  background-color: var(--basic-black);
+}
+
+/*header product section*/
 .header-bottom-menu-list {
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-weight: 800;
@@ -133,35 +207,6 @@ img {
   list-style-type: none;
 }
 
-/*content*/
-.text-header {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 47px;
-  line-height: 58px;
-}
-
-.button {
-  color: var(--basic-black);
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: uppercase;
-  height: 40px;
-  text-align: center;
-  
-  background: url("../img/button-rectangle.svg") 50% 50% repeat-x;
-
-  /* identical to box height */
-  letter-spacing: 0.2em;
-}
-
-.button:hover {
-  background-color: var(--special-yellow-dark);
-}
 
 /*slider*/
 .slider {
