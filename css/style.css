@@ -119,9 +119,13 @@ img {
 
 /*header*/
 .main-header {
-  height: 206px;
+  /*height: 206px;*/
   color: var(--basic-black);
   line-height: 20px;
+}
+
+.main-header-logo {
+  
 }
 
 /*header client section*/
@@ -138,12 +142,12 @@ img {
 }
 
 .main-navigation {
-  height: 186px;
+  /*height: 186px;*/
   background-color: var(--special-yellow);
 }
 
-.main-header-logo {
-  
+.logout-link {
+  opacity: 0.3;
 }
 
 /*searchbar*/
