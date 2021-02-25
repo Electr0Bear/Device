@@ -3,7 +3,7 @@
 /*fonts*/
 @font-face {
   font-family: "Gilroy";
-  src: 
+  src: local("Gilroy"), local("Gilroy-Bold"),
     url("../fonts/gilroyextrabold.woff2") format("woff2"),
     url("../fonts/gilroyextrabold.woff") format("woff");
   font-weight: 800;
@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: 
+  src: local("Gilroy"), local("Gilroy-UltraLight"),
     url("../fonts/gilroylight.woff2") format("woff2"),
     url("../fonts/gilroylight.woff") format("woff");
   font-weight: 300;
@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "Open Sans";
-  src:
+  src: local("Open Sans"),
     url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: "Open Sans";
-  src:
+  src: local("Open Sans"), local("Open Sans Light"),
     url("../fonts/opensanslight.woff2") format("woff2"),
     url("../fonts/opensanslight.woff") format("woff");
   font-weight: 300;
