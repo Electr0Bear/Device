@@ -102,6 +102,10 @@ img {
   opacity: 0.6;
 }
 
+.main-header a:active {
+  opacity: 0.3;
+}
+
 .main-navigation {
   height: 186px;
   background-color: var(--special-yellow);
