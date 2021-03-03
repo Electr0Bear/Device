@@ -14,7 +14,7 @@
 <body class="page-body">
 
   <!-- Основная шапка с навигацией -->
-  <header class="main-header">
+  <header class="main-header container">
 
     <a class="main-header-logo" href="#">
       <!--<img src="./img/logo-main.svg" width="163" height="35" alt="DEVICE">-->
@@ -77,18 +77,18 @@
   <!-- Контент-раздел-->
   <main class="container">
     <h1 hidden>Интернет-магазин Девайс</h1>
-    
+
     <!--Превью гаджетов-->
-    <section class="slider">
+    <section class="slider-wrapper">
       <h2 hidden>Гаджет-превью</h2>
 
       <!--первый слайд с гаджетом-->
-      <div class="first-slide">
+      <div class="slider-item first-slide">
         <h3 hidden>Самый необходимый монопод</h3>
         <img src="./img/index-slider-1-monopod.png" width="384" height="486" alt="Огроменный монопод">
         <p class="text-header">Делай селфи,<br>
           как Бен Стиллер!</p>
-        <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
+        <p class="slider-gadget-description">Самая длинная палка для селфи доступна в нашем магазине.<br>
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
         <a class="button slider-button" href="#">Подробнее</a>
@@ -108,12 +108,12 @@
       </div>
 
       <!--второй слайд с гаджетом-->
-      <div class="second-slide">
+      <div class="slider-item second-slide">
         <h3 hidden>Фитнес-трекер, который поможет осуществить мечты</h3>
         <img src="./img/index-slider-2-fitness-tracker.png" width="345" height="485" alt="Отличный фитнес-трекер">
         <p class="text-header">Худеем<br>
           правильно!</p>
-        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+        <p class="slider-gadget-description">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
           не пропускать занятия и соблюдать диету.</p>
 
         <a class="button slider-button" href="#">Подробнее</a>
@@ -129,12 +129,12 @@
       </div>
 
       <!--третий слайд с гаджетом-->
-      <div class="third-slide">
+      <div class="slider-item third-slide">
         <h3 hidden>Коптер, который необходим любому агенту Mi6</h3>
         <img src="./img/index-slider-3-copter.png" width="526" height="334" alt="Коптер от Кью">
         <p class="text-header">Порхает как бабочка,<br>
           жалит как пчела!</p>
-        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+        <p class="slider-gadget-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
           мощным лазером, замаскированным под стандартную камеру.
         </p>
 
@@ -162,9 +162,9 @@
     </section>
 
     <!--Список разделов-->
-    <section class="gadget-list">
+    <section>
       <h2 hidden>Меню разделов</h2>
-      <ul>
+      <ul class="gadget-list">
         <li class="gadget-menu">
           <a href="blank.html">
             <div class="gadget-menu-icon v-reality-icon"></div>
