@@ -105,6 +105,10 @@ ul {
   margin: 0;
 }
 
+h2, p {
+  margin: 0;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -306,7 +310,7 @@ ul {
   height: 526px;
 }*/
 
-.slider-wrapper {
+.slider {
   margin-bottom: 116px;
 }
 
@@ -428,21 +432,32 @@ ul {
   opacity: 0.3;
 }
 
-/*about us*/
-.about-us {
-  line-height: 28px;
-}
-
-.delivery-options {
-  font-family: var(--gilroy-font);
-  font-weight: 800;
-  font-size: 16px;
-  list-style-image: url("../img/bulletpoint.svg");
-}
-
 /*delivery guaranties credit*/
 .delivery-guaranties-credit {
   background-image: url("../img/delivery-gray-rectangle.svg");
+}
+
+.delivery-guaranties-credit-wrapper {
+  display: grid;
+  grid-template-columns: 284px auto;
+  gap: 116px;
+  margin-bottom: 90px;
+}
+
+.delivery-guaranties-credit-buttons {
+  border-right: 7px solid var(--basic-black);
+  width: 277px;
+  /*height: 320px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.delivery-guaranties-credit-buttons li {
+  display: block;
+  height: 40px;
+  margin-bottom: 30px;
 }
 
 .button-black:active {
@@ -453,24 +468,45 @@ ul {
 
 .delivery-guaranties-credit-info {
   line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.delivery-guaranties-credit-info li {
+  display: block;
+  max-height: 206px;
+}
+
+.delivery-guaranties-credit-info .delivery-guaranties-credit-description {
+  max-width: 574px;
 }
 
 .delivery-info {
   background-image: url("../img/delivery-guy-icon.svg");
   background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 
 .guarantee-info {
   background-image: url("../img/guarantee-icon.svg");
   background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 
 .credit-info {
   background-image: url("../img/credit-guy-icon.svg");
   background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 
 /*brand logos*/
+.gadget-brands {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  gap: 40px;
+  margin-bottom: 90px;
+}
 
 .brand-logo a {
   filter: grayscale(100%);
@@ -480,6 +516,67 @@ ul {
 .brand-logo a:hover {
   filter: none;
   opacity: 1;
+}
+
+/*about us*/
+.about-us {
+  line-height: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 77px;
+}
+
+.about-us-info, 
+.contacts {
+  display: grid;
+  grid-template-rows: 98px 1fr 40px;
+}
+
+
+
+.about-us .text-header {
+  vertical-align: bottom;
+}
+
+
+/*
+.about-us-info h2 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.contacts h2 {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.about-us-info .layout-about-us {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.contacts .layout-about-us {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.about-us-info .button {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.contacts .button {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+*/
+
+.delivery-options {
+  font-family: var(--gilroy-font);
+  font-weight: 800;
+  font-size: 16px;
+  list-style-image: url("../img/bulletpoint.svg");
 }
 
 /*footer*/
