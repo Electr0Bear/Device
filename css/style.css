@@ -105,7 +105,7 @@ ul {
   margin: 0;
 }
 
-h2, p {
+h2, h3, p {
   margin: 0;
 }
 
@@ -539,39 +539,6 @@ h2, p {
   vertical-align: bottom;
 }
 
-
-/*
-.about-us-info h2 {
-  grid-row: 1 / 2;
-  grid-column: 1 / 2;
-}
-
-.contacts h2 {
-  grid-row: 1 / 2;
-  grid-column: 2 / 3;
-}
-
-.about-us-info .layout-about-us {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-}
-
-.contacts .layout-about-us {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-}
-
-.about-us-info .button {
-  grid-row: 3 / 4;
-  grid-column: 1 / 2;
-}
-
-.contacts .button {
-  grid-row: 3 / 4;
-  grid-column: 2 / 3;
-}
-*/
-
 .delivery-options {
   font-family: var(--gilroy-font);
   font-weight: 800;
@@ -583,9 +550,22 @@ h2, p {
 .main-footer {
   background-color: var(--basic-dark);
   color: var(--basic-white);
+  padding-top: 46px;
 }
 
-.main-footer-logo {}
+.layout-main-footer {
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+
+.layout-main-footer-top-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.main-footer-logo {
+  margin-top: 18px;
+}
 
 .main-footer-logo:hover {
   opacity: 0.6;
@@ -605,8 +585,15 @@ h2, p {
   opacity: 0.3;
 }
 
+.top-footer {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
 .top-footer a {
   color: var(--transparent-white-07);
+  margin-left: 40px;
 }
 
 .top-footer a:hover {
