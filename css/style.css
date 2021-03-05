@@ -74,7 +74,7 @@
 .page-body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  min-width: 1200px;
   min-height: 100%;
   font-family: var(--open-sans-font);
   font-weight: 300;
@@ -114,7 +114,7 @@ p {
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .text-header {
@@ -125,8 +125,8 @@ p {
 }
 
 .hidden {
-  display:none
- }
+  display: none
+}
 
 /*buttons*/
 .button {
@@ -161,7 +161,7 @@ p {
 
 .main-header-wrapper {
   background-color: var(--special-yellow);
-  padding: 20px 60px 0 60px;
+  padding: 34px 60px 48px;
 }
 
 .main-header-logo {
@@ -216,13 +216,12 @@ p {
   color: transparent;
 }
 
-
-
 .searchbar-button {
   font-weight: inherit;
   line-height: inherit;
   text-transform: uppercase;
 }
+
 .searchbar-button:not(:focus):not(:active) {
   border: 2px solid var(--basic-black);
   box-sizing: border-box;
@@ -246,8 +245,6 @@ p {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  margin: 0;
-  padding: 0;
   min-height: 50px;
   width: 85px;
   text-align: center;
@@ -293,17 +290,17 @@ p {
 
 /*user interface*/
 .user-navigation-wrapper {
-  flex-basis:500px;
+  flex-basis: 500px;
 }
 
 .user-navigation-list {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
-  margin:0;
-  padding:0;
-  list-style:none
- }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
 
 .user-navigation-list .logout-link {
   opacity: 0.3;
@@ -314,25 +311,41 @@ p {
 }
 
 /*header product section*/
-.header-navigation-menu-list {
+.header-navigation-menu {
   font-family: var(--gilroy-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  display: grid;
-  grid-template-columns: 440px auto auto auto;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline
 }
 
-.header-navigation-menu-list li {
-  display: block;
+.header-catalog-menu {
+  flex-basis: 500px
 }
+
+.header-navigation-menu-list {
+  flex-basis:500px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+ }
+
+ .header-navigation-menu-list li:first-child {
+  margin-right:35px
+ }
+
+ .header-navigation-menu-list li:nth-child(3n) {
+  margin-left:auto;
+  margin-right:-4px
+ }
 
 .header-subcatalog {
   background-color: var(--special-yellow);
   height: 146px;
-
 }
 
 .header-subcatalog-list {
