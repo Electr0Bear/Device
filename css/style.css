@@ -105,14 +105,16 @@ ul {
   margin: 0;
 }
 
-h2, h3, p {
+h2,
+h3,
+p {
   margin: 0;
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .text-header {
@@ -121,6 +123,10 @@ h2, h3, p {
   font-size: 47px;
   line-height: 58px;
 }
+
+.hidden {
+  display:none
+ }
 
 /*buttons*/
 .button {
@@ -167,9 +173,11 @@ h2, h3, p {
 
 /*header client section*/
 .main-header-user-interface {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 27px;
 }
 
 .main-header a:hover {
@@ -180,28 +188,20 @@ h2, h3, p {
   opacity: 0.3;
 }
 
-.header-top-menu {}
-
-.header-top-menu a {
-  display: inline-block;
-}
-
-
-.header-top-menu .logout-link {
-  opacity: 0.3;
-}
-
 /*searchbar*/
 .searchbar {
-  margin-right: 100px;
+  flex-basis: 500px;
 }
 
 .searchbar-form-field {
   background-color: transparent;
   border: none;
   outline: none;
-  width: 356px;
-  min-height: 48px;
+  width: 317px;
+  min-height: 50px;
+  padding-right: 15px;
+  border: 0;
+  border-bottom: 2px solid transparent;
 }
 
 .searchbar-form-field::placeholder {
@@ -216,19 +216,69 @@ h2, h3, p {
   color: transparent;
 }
 
-.searchbar-form-field:focus {
-  border-bottom: 2px solid var(--basic-black);
-}
+
 
 .searchbar-button {
-  height: 50px;
-  width: 84px;
   font-weight: inherit;
   line-height: inherit;
   text-transform: uppercase;
+}
+.searchbar-button:not(:focus):not(:active) {
   border: 2px solid var(--basic-black);
   box-sizing: border-box;
   background-color: transparent;
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden
+}
+
+.searchbar-form-field:focus~.searchbar-button {
+  background-color: transparent
+}
+
+.searchbar-button:focus,
+.searchbar-form-field:focus~.searchbar-button {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  min-height: 50px;
+  width: 85px;
+  text-align: center;
+  border: 2px solid var(--basic-black);
+  clip: auto;
+  overflow: visible;
+  outline: 0;
+  cursor: pointer
+}
+
+.searchbar-button:focus,
+.searchbar-form-field:focus~.searchbar-button:hover {
+  background-color: var(--basic-black);
+  color: var(--basic-white);
+}
+
+.searchbar-button:active {
+  color: var(--transparent-black-03)
+}
+
+.searchbar-button:active::before,
+.searchbar-button:focus::before,
+.searchbar-form-field:focus~.searchbar-button::before {
+  content: "";
+  position: absolute;
+  left: -357px;
+  bottom: -2px;
+  display: block;
+  width: 355px;
+  height: 2px;
+  background-color: var(--basic-black);
 }
 
 .searchbar-button:hover {
@@ -239,6 +289,24 @@ h2, h3, p {
 .searchbar-button:active {
   color: var(--transparent-white-03);
   background-color: var(--basic-black);
+}
+
+/*user interface*/
+.user-navigation-wrapper {
+  flex-basis:500px;
+}
+
+.user-navigation-list {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  margin:0;
+  padding:0;
+  list-style:none
+ }
+
+.user-navigation-list .logout-link {
+  opacity: 0.3;
 }
 
 .header-main-navigation {
@@ -335,6 +403,7 @@ h2, h3, p {
   grid-column: 1 / 2;
   grid-row: 1 / 5;
 }
+
 .slider-item .text-header {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
@@ -451,7 +520,7 @@ h2, h3, p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
 }
 
 .delivery-guaranties-credit-buttons li {
@@ -527,7 +596,7 @@ h2, h3, p {
   margin-bottom: 77px;
 }
 
-.about-us-info, 
+.about-us-info,
 .contacts {
   display: grid;
   grid-template-rows: 98px 1fr 40px;
