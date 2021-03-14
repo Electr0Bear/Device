@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -15,285 +15,276 @@
 
   <!-- Основная шапка с навигацией -->
   <header class="main-header container">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="./index.html">
-        <!--<img src="./img/logo-main.svg" width="163" height="35" alt="DEVICE">-->
-        <h3 hidden>Интернет-магазин Device</h3>
-        <svg width="163" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M-.151.702v33.6h13.532a15.721 15.721 0 0011.72-4.824 16.459 16.459 0 004.712-11.976 16.457 16.457 0 00-4.712-11.976A15.724 15.724 0 0013.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 016.5 2.568 9.408 9.408 0 012.489 6.84 9.406 9.406 0 01-2.489 6.84 8.642 8.642 0 01-6.5 2.568h-5.8v.003zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952h.004zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.508 15.508 0 006.041-5.688l-6.67-3.84a7.481 7.481 0 01-3.165 3.024 9.873 9.873 0 01-4.664 1.1 9.594 9.594 0 01-7.177-2.736 9.911 9.911 0 01-2.682-7.248 9.91 9.91 0 012.682-7.248 9.593 9.593 0 017.177-2.736 9.897 9.897 0 014.639 1.08 7.589 7.589 0 013.19 3.048l6.67-3.84a15.874 15.874 0 00-6.09-5.688 17.42 17.42 0 00-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476 2.95.027 5.859-.691 8.458-2.088h.003zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952h.003z"
-            fill="#000" />
-        </svg>
-      </a>
-      <!--Поиск по сайту-->
-      <div class="searchbar">
-        <form class="searchbar-form" action=" https://echo.htmlacademy.ru" method="get">
-          <input class="searchbar-form-field" type="text" name="search" placeholder="Поиск по сайту">
-          <button class="searchbar-button" type="submit">Найти</button>
-        </form>
+
+    <a class="main-header-logo" href="./index.html">
+      <!--<img src="./img/logo-main.svg" width="163" height="35" alt="DEVICE">-->
+      <h3 hidden>Интернет-магазин Device</h3>
+      <svg width="163" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M-.151.702v33.6h13.532a15.721 15.721 0 0011.72-4.824 16.459 16.459 0 004.712-11.976 16.457 16.457 0 00-4.712-11.976A15.724 15.724 0 0013.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 016.5 2.568 9.408 9.408 0 012.489 6.84 9.406 9.406 0 01-2.489 6.84 8.642 8.642 0 01-6.5 2.568h-5.8v.003zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952h.004zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.508 15.508 0 006.041-5.688l-6.67-3.84a7.481 7.481 0 01-3.165 3.024 9.873 9.873 0 01-4.664 1.1 9.594 9.594 0 01-7.177-2.736 9.911 9.911 0 01-2.682-7.248 9.91 9.91 0 012.682-7.248 9.593 9.593 0 017.177-2.736 9.897 9.897 0 014.639 1.08 7.589 7.589 0 013.19 3.048l6.67-3.84a15.874 15.874 0 00-6.09-5.688 17.42 17.42 0 00-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476 2.95.027 5.859-.691 8.458-2.088h.003zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952h.003z"
+          fill="#000" />
+      </svg>
+    </a>
+
+    <div class="main-header-wrapper">
+      <div class="main-header-user-interface">
+        <!--Поиск по сайту-->
+        <div class="searchbar">
+          <form class="searchbar-form" action=" https://echo.htmlacademy.ru" method="get">
+            <input class="searchbar-form-field" type="text" name="search" placeholder="Поиск по сайту">
+            <button class="searchbar-button" type="submit">Найти</button>
+          </form>
+        </div>
+
+        <!--Верхнее меню-->
+        <div class="header-user-navigation-wrapper">
+          <ul class="user-navigation-list">
+            <li class="user-navigation-item">
+              <a class="user-navigation-link login hidden" href="#">Войти</a>
+              <a class="user-navigation-link profile" href="#">Валентин Петухов</a>
+              <a class="user-navigation-link logout-link" href="#">Выйти</a>
+            </li>
+            <li class="user-navigation-item">
+              <a class="user-navigation-link compare" href="#">Сравнить</a>
+            </li>
+            <li class="user-navigation-item">
+              <a class="user-navigation-link cart" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <!--Верхнее меню-->
-      <div class="header-top-menu">
-        <a class="user-cabinet-link" href="blank.html">Валентин Петухов</a>
-        <a class="logout-link" href="blank.html">Выйти</a>
-        <a class="comparison" href="blank.html">Сравнить</a>
-        <a class="cart" href="blank.html">Корзина</a>
-      </div>
-
-      <!--Нижнее меню-->
-      <div class="header-bottom-menu">
-        <ul class="header-bottom-menu-list">
-          <li class="header-catalog">
+      <nav class="header-main-navigation">
+        <!--Нижнее меню-->
+        <div class="header-navigation-menu">
+          <div class="header-catalog-menu">
             <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="header-delivery"><a href="#delivery">Доставка</a></li>
-          <li class="header-guarantee"><a href="#guarantees">Гарантия</a></li>
-          <li class="header-contacts"><a href="#how-to-find-us">Контакты</a></li>
-        </ul>
-      </div>
+          </div>
+          <ul class="header-navigation-menu-list">
+            <li class="header-delivery"><a href="#delivery">Доставка</a></li>
+            <li class="header-guarantee"><a href="#guarantees">Гарантия</a></li>
+            <li class="header-contacts"><a href="#how-to-find-us">Контакты</a></li>
+          </ul>
+        </div>
 
-      <div class="header-subcatalog">
-        <ul class="header-subcatalog-list">
-          <li><a href="blank.html">Виртуальная реальность</a></li>
-          <li><a href="blank.html">Моноподы для селфи</a></li>
-          <li><a href="blank.html">Экшн-камеры</a></li>
-          <li><a href="blank.html">Фитнес-браслеты</a></li>
-          <li><a href="blank.html">Умные часы</a></li>
-          <li><a href="blank.html">Квадрокоптеры</a></li>
-        </ul>
-      </div>
-    </nav>
+        <div class="header-subcatalog hidden">
+          <ul class="header-subcatalog-list">
+            <li><a href="blank.html">Виртуальная реальность</a></li>
+            <li><a href="blank.html">Моноподы для селфи</a></li>
+            <li><a href="blank.html">Экшн-камеры</a></li>
+            <li><a href="blank.html">Фитнес-браслеты</a></li>
+            <li><a href="blank.html">Умные часы</a></li>
+            <li><a href="blank.html">Квадрокоптеры</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <!--основной раздел-->
   <main>
     <div class="container">
-      <div class="extra-padding-left">
+      <div class="bredcumbs-wrapper">
         <h1 class="text-header">Моноподы для селфи</h1>
         <ul class="breadcrumbs-nav open-sans-small-text">
-          <li class="first-breadcrumb"><a href="./index.html">Главная</a></li>
-          <li class="second-breadcrumb"><a href="">Каталог товаров</a></li>
-          <li class="third-breadcrumb"><a href="">Моноподы для селфи</a></li>
+          <li class="breadcrumb-item"><a href="./index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a href="">Каталог товаров</a></li>
+          <li class="breadcrumb-item breadcrumb-item-current"><a href="">Моноподы для селфи</a></li>
         </ul>
       </div>
     </div>
 
-    <!--фильтр-->
-    <section class="main-section-catalog">
-      <h2 hidden>Каталог товаров</h2>
-      <section class="filter">
-        <div class="container">
-          <div class="extra-padding-left">
-            <div class="filter-header">
-              <h2>Фильтр:</h2>
+    <section class="main-section-catalog container">
+      <h2 class="hidden">Каталог товаров</h2>
+      <!--фильтр-заголовок-->
+      <div class="catalog-filter">
+        <div class="filter-header">
+          <h2>Фильтр:</h2>
+        </div>
+        <!--фильтр-->
+        <form class="catalog-filter-wrapper" action="https://echo.htmlacademy.ru" method="POST">
+          <!--ползунок стоимости-->
+          <div class="filter-item">
+            <span class="filter-item-header">Стоимость</span>
+            <div class="filter-price-range">
+              <input type="range" name="price" id="price" min="0" max="10000" value="5000">
             </div>
-            <div>
-              <!--сортировка-->
-              <div class="sorting">
-                <p class="sorting-header">Сортировка:</p>
-                <ul class="sorting-criteria-list open-sans-small-text">
-                  <li><a class="sorting-price active" href="#">По цене</a></li>
-                  <li><a class="sorting-type" href="#">По типу</a></li>
-                  <li><a class="sorting-popularity" href="#">По популярности</a></li>
-                </ul>
-                <ul class="sorting-direction">
-                  <li><a class="sorting-up" href="#">
-                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 14H14L8.5 4L3 14Z" fill="black" fill-opacity="1" />
-                      </svg>
-                    </a></li>
-                  <li><a class="sorting-down active" href="#">
-                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 4L3 4L8.5 14L14 4Z" fill="black" fill-opacity="1" />
-                      </svg>
-                    </a></li>
-                </ul>
-              </div>
+            <div class="filter-price-min-max">
+              <label class="filter-price-min-label" for="price-min">от</label>
+              <input class="filter-price-min" type="number" name="price-min" id="price-min" value="0">
+              <label class="filter-price-max-label" for="price-max">до</label>
+              <input class="filter-price-max" type="number" name="price-max" id="price-max" value="5000">
             </div>
           </div>
-
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            
-            <div class="extra-padding-left">
-              <!--ползунок стоимости-->
-              <fieldset class="filter-price">
-                <span class="filter-section-header">Стоимость</span>
-                <div class="filter-price-range">
-                  <input type="range" name="price" id="price" min="0" max="10000" value="5000">
-                </div>
-                <div class="filter-price-min-max">
-                  <label class="filter-price-min-label" for="price-min">от</label>
-                  <input class="filter-price-min" type="number" name="price-min" id="price-min" value="0">
-                  <label class="filter-price-max-label" for="price-max">до</label>
-                  <input class="filter-price-max" type="number" name="price-max" id="price-max" value="5000">
-                </div>
-              </fieldset>
-
-              <!--выбор цвета-->
-              <fieldset class="filter-color">
-                <span class="filter-section-header">Цвет</span>
-                <ul class="filter-color-list open-sans-small-text">
-                  <li>
-                    <input type="checkbox" name="black" id="filter-black" checked>
-                    <label for="filter-black">Чёрный</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="white" id="filter-white">
-                    <label for="filter-white">Белый</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="blue" id="filter-blue" checked>
-                    <label for="filter-blue">Синий</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="red" id="filter-red" checked>
-                    <label for="filter-red">Красный</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="pink" id="filter-pink">
-                    <label for="filter-pink">Розовый</label>
-                  </li>
-                </ul>
-              </fieldset>
-
-              <!--наличие BT-->
-              <fieldset class="bluetooth-filter">
-                <span class="filter-section-header">Bluetooth</span>
-                <ul class="bluetooth-filter-choice open-sans-small-text">
-                  <li>
-                    <input type="radio" name="btooth" value="yes" id="filter-bt-yes" checked>
-                    <label for="filter-bt-yes">Да</label>
-                  </li>
-                  <li>
-                    <input type="radio" name="btooth" value="no" id="filter-bt-no">
-                    <label for="filter-bt-no">Нет</label>
-                  </li>
-                </ul>
-
-              </fieldset>
-              <button class="button" type="submit">Показать</button>
-            </div>
-
-          </form>
-        </div>
-
-      </section>
-
-      <!--область с товарами-->
-      <section>
-        <h2 hidden>Наши гаджеты</h2>
-
-        <!--товары-->
-        <div class="container product-list">
-          <ul>
-            <li class="product-item">
-              <div>
-                <img class="product-item-image" src="./img/catalog-monopods-item-1-amateur-selfie-stick.jpg" width="360" height="381"
-                  alt="Любительская селфи-палка">
-                <img class="product-item-new-icon" src="./img/catalog-item-new-icon.svg" alt="Новый гаджет" hidden>
-                <div>
-                  <button class="button" type="button">В корзину</button>
-                  <button class="button-comparison" type="button">Добавить к сравнению</button>
-                </div>
-              </div>
-              <div>
-                <a href="blank.html">
-                  <h3>Любительская селфи-палка</h3>
-                </a>
-                <p class="product-item-price">1100 руб.</p>
-              </div>
-            </li>
-            <li class="product-item">
-              <div>
-                <img class="product-item-image" src="./img/catalog-monopods-item-2-pro-selfie-stick.jpg" width="360" height="381"
-                  alt="Профессиональная селфи-палка">
-                <img class="product-item-new-icon" src="./img/catalog-item-new-icon.svg" alt="Новый гаджет" hidden>
-                <div>
-                  <button class="button" type="button">В корзину</button>
-                  <button class="button-comparison" type="button">Добавить к сравнению</button>
-                </div>
-              </div>
-              <div>
-                <a href="blank.html">
-                  <h3>Профессиональная селфи-палка</h3>
-                </a>
-                <p class="product-item-price">1500 руб.</p>
-              </div>
-            </li>
-            <li class="product-item">
-              <div>
-                <img class="product-item-image" src="./img/catalog-monopods-item-3-unsinkable-selfie-stick.jpg" width="360" height="381"
-                  alt="Непотопляемая селфи-палка">
-                <img class="product-item-new-icon" src="./img/catalog-item-new-icon.svg" alt="Новый гаджет" hidden>
-                <div>
-                  <button class="button" type="button">В корзину</button>
-                  <button class="button-comparison" type="button">Добавить к сравнению</button>
-                </div>
-              </div>
-              <div>
-                <a href="blank.html">
-                  <h3>Непотопляемая селфи-палка</h3>
-                </a>
-                <p class="product-item-price">1500 руб.</p>
-              </div>
-            </li>
-            <li class="product-item">
-              <div>
-                <img class="product-item-image" src="./img/catalog-monopods-item-4-follow-me-selfie-stick.jpg" width="360" height="381"
-                  alt="Селфи-палка &laquo;Следуй за мной&raquo;">
-                <img class="product-item-new-icon" src="./img/catalog-item-new-icon.svg" alt="Новый гаджет">
-                <div>
-                  <button class="button" type="button">В корзину</button>
-                  <button class="button-comparison" type="button">Добавить к сравнению</button>
-                </div>
-              </div>
-              <div>
-                <a href="blank.html">
-                  <h3>Селфи-палка &laquo;Следуй за мной&raquo;</h3>
-                </a>
-                <p class="product-item-price">1900 руб.</p>
-              </div>
-            </li>
-          </ul>
-
-          <div class="items-nav">
-            <ul>
-              <li class="items-navbutton">
-                <a class="items-navbutton-back" href="#">Назад</a>
+          <!--выбор цвета-->
+          <div class="filter-item">
+            <span class="filter-item-header">Цвет</span>
+            <ul class="filter-color-list open-sans-small-text">
+              <li>
+                <input type="checkbox" name="black" id="filter-black" checked>
+                <label for="filter-black">Чёрный</label>
               </li>
               <li>
-                <ul class="items-navnumber">
-                  <li class="active">
-                    <a href="#">1</a>
-                  </li>
-                  <li>
-                    <a href="#">2</a>
-                  </li>
-                  <li>
-                    <a href="#">3</a>
-                  </li>
-                </ul>
+                <input type="checkbox" name="white" id="filter-white">
+                <label for="filter-white">Белый</label>
               </li>
-              <li class="items-navbutton">
-                <a class="items-navbutton-forward" href="#">Вперед</a>
+              <li>
+                <input type="checkbox" name="blue" id="filter-blue" checked>
+                <label for="filter-blue">Синий</label>
+              </li>
+              <li>
+                <input type="checkbox" name="red" id="filter-red" checked>
+                <label for="filter-red">Красный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="pink" id="filter-pink">
+                <label for="filter-pink">Розовый</label>
               </li>
             </ul>
           </div>
+          <!--наличие BT-->
+          <div class="filter-item">
+            <span class="filter-item-header">Bluetooth</span>
+            <ul class="bluetooth-filter-choice open-sans-small-text">
+              <li>
+                <input type="radio" name="btooth" value="yes" id="filter-bt-yes" checked>
+                <label for="filter-bt-yes">Да</label>
+              </li>
+              <li>
+                <input type="radio" name="btooth" value="no" id="filter-bt-no">
+                <label for="filter-bt-no">Нет</label>
+              </li>
+            </ul>
 
+          </div>
+          <button class="button" type="submit">Показать</button>
+        </form>
+      </div>
+
+      <div class="catalog-gadget-list">
+        <!--сортировка-->
+        <div class="sorting">
+          <h2 class="sorting-header">Сортировка:</h2>
+          <ul class="sorting-criteria-list open-sans-small-text">
+            <li class="sorting-criteria-item"><a class=" active" href="#">По цене</a></li>
+            <li class="sorting-criteria-item"><a class="" href="#">По типу</a></li>
+            <li class="sorting-criteria-item"><a class="" href="#">По популярности</a></li>
+          </ul>
+          <ul class="sorting-direction-list">
+            <li><a class="sorting-up" href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 14H14L8.5 4L3 14Z" fill="black" fill-opacity="1" />
+                </svg>
+              </a></li>
+            <li><a class="sorting-down active" href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 4L3 4L8.5 14L14 4Z" fill="black" fill-opacity="1" />
+                </svg>
+              </a></li>
+          </ul>
         </div>
-
+        <!--товары-->
+        <ul class="product-list">
+          <li class="product-item">
+            <div>
+              <img class="product-item-image" src="./img/catalog-monopods-item-1-amateur-selfie-stick.jpg" width="360"
+                height="381" alt="Любительская селфи-палка">
+              <img class="product-item-new-icon hidden" src="./img/catalog-item-new-icon.svg" alt="Новый гаджет">
+              <div>
+                <button class="button" type="button">В корзину</button>
+                <button class="button-comparison" type="button">Добавить к сравнению</button>
+              </div>
+            </div>
+            <div class="product-item-info">
+              <a href="blank.html">
+                <h3>Любительская селфи-палка</h3>
+              </a>
+              <p class="product-item-price">1100 руб.</p>
+            </div>
+          </li>
+          <li class="product-item">
+            <div>
+              <img class="product-item-image" src="./img/catalog-monopods-item-2-pro-selfie-stick.jpg" width="360"
+                height="381" alt="Профессиональная селфи-палка">
+              <img class="product-item-new-icon hidden" src="./img/catalog-item-new-icon.svg" alt="Новый гаджет">
+              <div>
+                <button class="button" type="button">В корзину</button>
+                <button class="button-comparison" type="button">Добавить к сравнению</button>
+              </div>
+            </div>
+            <div class="product-item-info">
+              <a href="blank.html">
+                <h3>Профессиональная селфи-палка</h3>
+              </a>
+              <p class="product-item-price">1500 руб.</p>
+            </div>
+          </li>
+          <li class="product-item">
+            <div>
+              <img class="product-item-image" src="./img/catalog-monopods-item-3-unsinkable-selfie-stick.jpg"
+                width="360" height="381" alt="Непотопляемая селфи-палка">
+              <img class="product-item-new-icon hidden" src="./img/catalog-item-new-icon.svg" alt="Новый гаджет">
+              <div>
+                <button class="button" type="button">В корзину</button>
+                <button class="button-comparison" type="button">Добавить к сравнению</button>
+              </div>
+            </div>
+            <div class="product-item-info">
+              <a href="blank.html">
+                <h3>Непотопляемая селфи-палка</h3>
+              </a>
+              <p class="product-item-price">1500 руб.</p>
+            </div>
+          </li>
+          <li class="product-item">
+            <div>
+              <img class="product-item-image" src="./img/catalog-monopods-item-4-follow-me-selfie-stick.jpg" width="360"
+                height="381" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
+              <img class="product-item-new-icon" src="./img/catalog-item-new-icon.svg" alt="Новый гаджет">
+              <div>
+                <button class="button" type="button">В корзину</button>
+                <button class="button-comparison" type="button">Добавить к сравнению</button>
+              </div>
+            </div>
+            <div class="product-item-info">
+              <a href="blank.html">
+                <h3>Селфи-палка &laquo;Следуй за мной&raquo;</h3>
+              </a>
+              <p class="product-item-price">1900 руб.</p>
+            </div>
+          </li>
+        </ul>
         <!--навигация по товарам-->
-        
-      </section>
+        <ul class="items-nav">
+          <li class="items-navbutton">
+            <a class="items-navbutton-back" href="#">Назад</a>
+          </li>
+          <li>
+            <ul class="items-navnumber">
+              <li class="active">
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="items-navbutton">
+            <a class="items-navbutton-forward" href="#">Вперед</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
   </main>
 
   <!--Онсновной футер-->
   <footer class="main-footer">
-    <div class="container">
-      <div>
+    <div class="layout-main-footer container">
+      <div class="layout-main-footer-top-row">
         <a class="main-footer-logo" href="./index.html">
           <!--<img src="./img/logo-footer-main.svg" width="163" height="35" alt="DEVICE">-->
           <h3 hidden>Интернет-магазин Device</h3>
@@ -310,15 +301,24 @@
             </defs>
           </svg>
         </a>
-        <div class="top-footer">
-          <a class="user-cabinet-link" href="blank.html">Валентин Петухов</a>
-          <a class="logout-link" href="blank.html">Выйти</a>
-          <a class="comparison" href="blank.html">Сравнить</a>
-          <a class="cart" href="blank.html">Корзина</a>
+        <div class="footer-user-navigation">
+          <ul class="user-navigation-list">
+            <li class="user-navigation-item">
+              <a class="user-navigation-link login hidden" href="#">Войти</a>
+              <a class="user-navigation-link profile" href="#">Валентин Петухов</a>
+              <a class="user-navigation-link logout-link" href="#">Выйти</a>
+            </li>
+            <li class="user-navigation-item">
+              <a class="user-navigation-link compare" href="#">Сравнить</a>
+            </li>
+            <li class="user-navigation-item">
+              <a class="user-navigation-link cart" href="#">Корзина</a>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div class="footer-contacts">
+      <div class="layout-main-footer-contacts">
         <address>г.Москва, ул.Строителей, 15</address>
         <div class="bottom-footer">
           <ul class="bottom-footer-list">
@@ -335,6 +335,7 @@
       <div>
         <section class="footer-socials">
           <h2 hidden>Мы в социальных сетях</h2>
+          <div class="layout-footer-socials-emptybox"></div>
           <ul>
             <li>
               <a class="footer-socials-button" href="#">
@@ -370,25 +371,26 @@
               </a>
             </li>
           </ul>
+          <div class="footer-copyright-logo">
+            <a href="#">
+              <!--<img src="./img/logo-footer-small.svg" width="26.94" height="34" alt="DEVICE">-->
+              <h3 hidden>Онлайн-школа HTMLAcademy</h3>
+              <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M13.62.017L13.472 0 0 1.408v24.596L13.473 34l13.43-7.969.042-.025V1.408L13.62.017zm11.399 12.078L13.495 5.32l-.001-.104-.087.05-.088-.056v.109L1.925 12.086V3.139l11.548-1.21L25.02 3.14v8.956h-.001zM13.405 6.769l11.518 6.695-4.479 2.633-7.093-4.21-.014 1.412 5.904 3.503-.86.506-5.03-2.984-.014 1.411 3.827 2.27-.782.521-3.031-1.782-.014 1.409 1.853 1.088-1.8 1.078-11.356-6.733 11.371-6.817zm-11.48 8.318l11.411 6.773.016 1.041-7.942-4.715-.015 1.412 7.979 4.783.018 1.073-7.973-4.728-.013 1.41 8.021 4.81.046.025 8.143-4.86-.011-5.163 3.415-2.03v9.994l-11.548 6.854-11.547-6.853v-9.826z"
+                    fill="#F0C52E" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <path fill="#fff" d="M0 0h26.943v34H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
         </section>
-        <a class="footer-copyright-logo" href="#">
-          <!--<img src="./img/logo-footer-small.svg" width="26.94" height="34" alt="DEVICE">-->
-          <h3 hidden>Онлайн-школа HTMLAcademy</h3>
-          <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0)">
-              <path
-                d="M13.62.017L13.472 0 0 1.408v24.596L13.473 34l13.43-7.969.042-.025V1.408L13.62.017zm11.399 12.078L13.495 5.32l-.001-.104-.087.05-.088-.056v.109L1.925 12.086V3.139l11.548-1.21L25.02 3.14v8.956h-.001zM13.405 6.769l11.518 6.695-4.479 2.633-7.093-4.21-.014 1.412 5.904 3.503-.86.506-5.03-2.984-.014 1.411 3.827 2.27-.782.521-3.031-1.782-.014 1.409 1.853 1.088-1.8 1.078-11.356-6.733 11.371-6.817zm-11.48 8.318l11.411 6.773.016 1.041-7.942-4.715-.015 1.412 7.979 4.783.018 1.073-7.973-4.728-.013 1.41 8.021 4.81.046.025 8.143-4.86-.011-5.163 3.415-2.03v9.994l-11.548 6.854-11.547-6.853v-9.826z"
-                fill="#F0C52E" />
-            </g>
-            <defs>
-              <clipPath id="clip0">
-                <path fill="#fff" d="M0 0h26.943v34H0z" />
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
       </div>
-    </div>
 
   </footer>
 </body>
