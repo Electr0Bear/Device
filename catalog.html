@@ -26,59 +26,56 @@
       </svg>
     </a>
 
-    <div class="main-header-wrapper">
-      <div class="main-header-user-interface">
-        <!--Поиск по сайту-->
-        <div class="searchbar">
+    <nav class="header-main-navigation">
+
+      <!--Поиск по сайту-->
+      <ul class="user-navigation-list">
+        <li class="searchbar">
           <form class="searchbar-form" action=" https://echo.htmlacademy.ru" method="get">
-            <input class="searchbar-form-field" type="text" name="search" placeholder="Поиск по сайту">
+            <label class="searchbar-form-label" for="header-search"></label>
+            <input class="searchbar-form-field" id="header-search" type="text" name="search" placeholder="Поиск по сайту">
             <button class="searchbar-button" type="submit">Найти</button>
           </form>
-        </div>
-
-        <!--Верхнее меню-->
-        <div class="header-user-navigation-wrapper">
-          <ul class="user-navigation-list">
-            <li class="user-navigation-item">
-              <a class="user-navigation-link login hidden" href="#">Войти</a>
-              <a class="user-navigation-link profile" href="#">Валентин Петухов</a>
-              <a class="user-navigation-link logout-link" href="#">Выйти</a>
-            </li>
-            <li class="user-navigation-item">
-              <a class="user-navigation-link compare" href="#">Сравнить</a>
-            </li>
-            <li class="user-navigation-item">
-              <a class="user-navigation-link cart" href="#">Корзина</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <nav class="header-main-navigation">
-        <!--Нижнее меню-->
-        <div class="header-navigation-menu">
-          <div class="header-catalog-menu">
-            <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <!--Кабинет пользователя-->
+        <li class="user-navigation-item">
+          <a class="user-navigation-link login" href="#">Войти</a>
+          <a class="user-navigation-link profile hidden" href="#">Валентин Петухов</a>
+          <a class="user-navigation-link logout-link hidden" href="#">Выйти</a>
+        </li>
+        <li class="user-navigation-item">
+          <a class="user-navigation-link compare" href="#">Сравнить</a>
+        </li>
+        <li class="user-navigation-item">
+          <a class="user-navigation-link cart" href="#">Корзина</a>
+        </li>
+      </ul>
+      <!--Меню навигации по сайту-->
+      <ul class="header-navigation-menu-list">
+        <li class="header-catalog-menu">
+          <a class="header-catalog-link" href="catalog.html">Каталог товаров</a>
+          <div class="header-subcatalog">
+            <ul class="header-subcatalog-list">
+              <li>
+                <a href="blank.html">Виртуальная реальность</a>
+                <a href="blank.html">Моноподы для селфи</a>
+                <a href="blank.html">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="blank.html">Фитнес-браслеты</a>
+                <a href="blank.html">Умные часы</a>
+              </li>
+              <li>
+                <a href="blank.html">Квадрокоптеры</a>
+              </li>
+            </ul>
           </div>
-          <ul class="header-navigation-menu-list">
-            <li class="header-delivery"><a href="#delivery">Доставка</a></li>
-            <li class="header-guarantee"><a href="#guarantees">Гарантия</a></li>
-            <li class="header-contacts"><a href="#how-to-find-us">Контакты</a></li>
-          </ul>
-        </div>
-
-        <div class="header-subcatalog hidden">
-          <ul class="header-subcatalog-list">
-            <li><a href="blank.html">Виртуальная реальность</a></li>
-            <li><a href="blank.html">Моноподы для селфи</a></li>
-            <li><a href="blank.html">Экшн-камеры</a></li>
-            <li><a href="blank.html">Фитнес-браслеты</a></li>
-            <li><a href="blank.html">Умные часы</a></li>
-            <li><a href="blank.html">Квадрокоптеры</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+        </li>
+        <li class="header-delivery"><a href="#delivery">Доставка</a></li>
+        <li class="header-guarantee"><a href="#guarantees">Гарантия</a></li>
+        <li class="header-contacts"><a href="#how-to-find-us">Контакты</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!--основной раздел-->
