@@ -39,9 +39,9 @@
         </li>
         <!--Кабинет пользователя-->
         <li class="user-navigation-item">
-          <a class="user-navigation-link login" href="#">Войти</a>
-          <a class="user-navigation-link profile hidden" href="#">Валентин Петухов</a>
-          <a class="user-navigation-link logout-link hidden" href="#">Выйти</a>
+          <a class="user-navigation-link login hidden" href="#">Войти</a>
+          <a class="user-navigation-link profile" href="#">Валентин Петухов</a>
+          <a class="user-navigation-link logout-link " href="#">Выйти</a>
         </li>
         <li class="user-navigation-item">
           <a class="user-navigation-link compare" href="#">Сравнить</a>
@@ -282,7 +282,7 @@
   <footer class="main-footer">
     <div class="layout-main-footer container">
       <div class="layout-main-footer-top-row">
-        <a class="main-footer-logo" href="./index.html">
+        <a class="main-footer-logo" href="#">
           <!--<img src="./img/logo-footer-main.svg" width="163" height="35" alt="DEVICE">-->
           <h3 hidden>Интернет-магазин Device</h3>
           <svg width="163" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -298,32 +298,32 @@
             </defs>
           </svg>
         </a>
-        <div class="footer-user-navigation">
-          <ul class="user-navigation-list">
-            <li class="user-navigation-item">
-              <a class="user-navigation-link login hidden" href="#">Войти</a>
-              <a class="user-navigation-link profile" href="#">Валентин Петухов</a>
-              <a class="user-navigation-link logout-link" href="#">Выйти</a>
-            </li>
-            <li class="user-navigation-item">
-              <a class="user-navigation-link compare" href="#">Сравнить</a>
-            </li>
-            <li class="user-navigation-item">
-              <a class="user-navigation-link cart" href="#">Корзина</a>
-            </li>
-          </ul>
-        </div>
+
+        <ul class="footer-user-navigation-list">
+          <li class="footer-user-navigation-item">
+            <a class="footer-user-navigation-link login hidden" href="#">Войти</a>
+            <a class="footer-user-navigation-link profile" href="#">Валентин Петухов</a>
+            <a class="footer-user-navigation-link logout-link" href="#">Выйти</a>
+          </li>
+          <li class="footer-user-navigation-item">
+            <a class="footer-user-navigation-link compare" href="#">Сравнить</a>
+          </li>
+          <li class="footer-user-navigation-item">
+            <a class="footer-user-navigation-link cart" href="#">Корзина</a>
+          </li>
+        </ul>
+
       </div>
 
       <div class="layout-main-footer-contacts">
-        <address>г.Москва, ул.Строителей, 15</address>
-        <div class="bottom-footer">
-          <ul class="bottom-footer-list">
-            <li><a href="./index.html#delivery">Доставка</a></li>
-            <li><a href="./index.html#guarantees">Гарантия</a></li>
-            <li><a href="./index.html#how-to-find-us">Контакты</a></li>
-          </ul>
-        </div>
+        <address>г. Москва, ул. Строителей, 15</address>
+
+        <ul class="bottom-footer-list">
+          <li><a href="./index.html#delivery">Доставка</a></li>
+          <li><a href="./index.html#guarantees">Гарантия</a></li>
+          <li><a href="./index.html#how-to-find-us">Контакты</a></li>
+        </ul>
+
         <p class="footer-contacts-phone">
           <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         </p>
@@ -388,7 +388,6 @@
           </div>
         </section>
       </div>
-
   </footer>
 </body>
 

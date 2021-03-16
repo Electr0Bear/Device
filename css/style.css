@@ -332,12 +332,17 @@ p {
 
 .user-navigation-list .logout-link {
   opacity: 0.3;
+  padding-left: 18px;
 }
 
 .user-navigation-link::before {
   content: url("../img/header-user-login-icon.svg");
   margin-right: 13px;
   opacity: 1;
+}
+
+.user-navigation-link.logout-link::before {
+  content: none;
 }
 
 .user-navigation-link.compare::before {
@@ -722,7 +727,7 @@ p {
 .layout-main-footer-top-row {
   display: grid;
   grid-template-columns: auto 1fr;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .main-footer-logo {
@@ -743,14 +748,38 @@ p {
   justify-content: flex-end;
 }
 
+.footer-user-navigation-item:first-child {
+  width: 225px;
+  text-align: right;
+}
 
 .footer-user-navigation-link {
   color: var(--transparent-white-07);
-  margin-left: 40px;
+  padding-left: 43px;
 }
 
 .footer-user-navigation-link::before {
-  content: url("");
+  content: url("../img/footer-user-icon.svg");
+  padding-right: 12px;
+}
+
+.footer-user-navigation-link.logout-link {
+  padding-left: 18px;
+}
+
+.footer-user-navigation-link.profile {
+  padding-left: 0;
+}
+.footer-user-navigation-link.logout-link::before {
+  content: none;
+}
+
+.footer-user-navigation-link.compare::before {
+  content: url("../img/footer-compare-icon.svg");
+}
+
+.footer-user-navigation-link.cart::before {
+  content: url("../img/footer-cart-icon.svg");
 }
 
 .footer-user-navigation-link:hover {
@@ -761,12 +790,10 @@ p {
   color: var(--transparent-white-03)
 }
 
-
-
-
 .layout-main-footer-contacts {
   display: grid;
   grid-template-columns: 212px 1fr 212px;
+  margin-bottom: 62px;
 }
 
 .layout-main-footer-contacts address {
@@ -778,7 +805,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 67px;
+  padding-bottom: 5px;
 }
 
 .bottom-footer-list li {
@@ -786,12 +813,10 @@ p {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-
-  /* identical to box height */
   letter-spacing: 0.2em;
   text-transform: uppercase;
   display: block;
-  margin-right: 36px;
+  margin-right: 33px;
 }
 
 .bottom-footer-list li:last-child {
@@ -821,12 +846,25 @@ p {
 .footer-socials {
   display: grid;
   grid-template-columns: 27px 1fr 27px;
+  position: relative;
+
 }
 
 .footer-socials ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+}
+
+.layout-footer-socials-emptybox::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 80px;
+  height: 7px;
+  top: 12px;
+  background-color: var(--special-yellow-dark);
 }
 
 .footer-socials li {
