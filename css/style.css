@@ -64,12 +64,12 @@
   --gilroy-font: "Gilroy", Helvetica, sans-serif;
 }
 
-* {
+/* * {
   outline: 2px dashed teal;
   outline-offset: -2px;
-}*
+}*/
 
-*,
+* *,
 ::before,
 ::after {
   box-sizing: inherit;
@@ -156,24 +156,28 @@ p {
 
 /*КНОПКИ*/
 .button {
+  display: block;
   color: var(--basic-black);
   font-family: var(--gilroy-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   background: url("../img/button-rectangle.svg") 50% 50% repeat-x;
   letter-spacing: 0.2em;
-  border: none;
+  border: 0;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .button:hover {
   background-color: var(--special-yellow-dark);
 }
 
-.button:active::before {
+.button:active {
   color: var(--transparent-black-03)
 }
 
@@ -973,7 +977,7 @@ button {
 .bredcumbs-wrapper {
   padding-top: 42px;
   padding-left: 80px;
-  margin-bottom: 46px;
+  margin-bottom: 47px;
 }
 
 .breadcrumbs-nav {
@@ -1077,7 +1081,8 @@ button {
   line-height: 17px;
   letter-spacing: 0.1em;
 }
- /*КАТАЛОГ - основная секция - фильтр по стоимости*/
+
+/*КАТАЛОГ - основная секция - фильтр по стоимости*/
 .filter-range {
   height: 2px;
   background-color: var(--transparent-black-02);
@@ -1120,6 +1125,11 @@ button {
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
+}
+
+.catalog-filter-button {
+  width: 100%;
+  margin-top: 5px;
 }
 
 /*КАТАЛОГ - основная секция - фильтр по цвету*/
@@ -1171,4 +1181,169 @@ button {
 
 .sorting .active {
   opacity: 1;
+}
+
+/*КАТАЛОГ - товары*/
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-top: 70px;
+  padding-left: 72px;
+}
+
+.product-item {
+  position: relative;
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 47px;
+}
+
+.product-item:nth-child(3),
+.product-item:last-child {
+  margin-bottom: 0px;
+}
+
+.product-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.product-item-card {
+  position: relative;
+}
+
+.product-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 29px;
+  padding-right: 5px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-item .button {
+  width: 200px;
+  margin-bottom: 12px;
+}
+
+.button-comparison {
+  background-color: transparent;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.button-comparison:hover {
+  opacity: 1;
+}
+
+.button-comparison:active {
+  opacity: 0.2;
+}
+
+.product-item-card:hover .product-item-image {
+  opacity: 0.7;
+}
+
+.product-item-card:hover .product-buttons {
+  display: flex;
+}
+
+.product-item-new-icon {
+  position: absolute;
+  top: 29px;
+  right: 27px;
+}
+
+.product-item-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+}
+
+.product-item h3 {
+  font-family: var(--gilroy-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  width: 270px;
+}
+
+.product-item:nth-child(2n) h3 {
+  width: 250px;
+}
+
+.product-item-price {
+  font-family: var(--gilroy-font);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  padding-top: 3px;
+  padding-right: 2px;
+}
+
+/*КАТАЛОГ - товары - навигация*/
+.items-nav {
+  background-color: var(--basic-grey-product-navbar);
+  font-family: var(--gilroy-font);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 760px;
+  margin-top: 40px;
+  margin-bottom: 77px;
+  margin-left: 71px;
+}
+
+.items-navnumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-navnumber li {
+  opacity: 0.3;
+  margin-right: 30px;
+}
+
+.items-navnumber li:last-child {
+  margin-right: 0;
+}
+
+.items-navbutton a {
+  display: block;
+  width: 120px;
+  padding: 25px 30px;
+}
+
+.items-navbutton .items-navbutton-forward {
+  padding-left: 25px;
+  padding-right: 35px;
+}
+
+.items-navbutton:hover {
+  background-color: var(--basic-grey-product-navbutton);
+}
+
+.items-navnumber .active {
+  opacity: 1;
+}
+
+.items-navbutton:active a {
+  opacity: 0.3;
 }
