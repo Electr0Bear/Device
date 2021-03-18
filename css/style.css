@@ -194,7 +194,7 @@ p {
   left: 60px;
 }
 
-/*header client section*/
+/*ШАПКА - раздел пользователя*/
 .main-header-user-interface {
   display: flex;
   flex-wrap: wrap;
@@ -229,11 +229,11 @@ p {
 .searchbar-form-label {
   display: inline-block;
   vertical-align: middle;
-  width: 16px;
+  width: 25px;
   height: 16px;
   background-image: url("../img/header-searchbar-icon.svg");
   background-repeat: no-repeat;
-  background-position: 3px 2px;
+  background-position: 3px 1px;
 }
 
 .searchbar-form-field::placeholder {
@@ -302,7 +302,7 @@ p {
 .searchbar-form-field:focus~.searchbar-button::before {
   content: "";
   position: absolute;
-  left: -340px;
+  left: -352px;
   bottom: -2px;
   display: block;
   width: 355px;
