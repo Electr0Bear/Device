@@ -470,7 +470,22 @@ p {
 /*ГЛАВНАЯ - слайдер*/
 
 .slider {
-  margin-bottom: 116px;
+  margin-bottom: 101px;
+  position: relative;
+}
+.slider-buttons{
+  position: absolute;
+  bottom: 150px;
+  right: 88px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.slider-item {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 39px;
+  height: 486px;
 }
 
 .slider-item::before {
@@ -483,11 +498,8 @@ p {
   background-color: var(--special-yellow);
 }
 
-.slider-item {
+.slider-show {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  height: 486px;
 }
 
 .slider-item-image {
@@ -499,7 +511,27 @@ p {
 
 .slider-item-image img {
   position: absolute;
-  top: -15px;
+  top: -17px;
+}
+
+.third-slide img {
+  top: 64px;
+  right: 4px;
+}
+
+.slider-item-info {
+  position: relative;
+}
+
+.slider-item-info::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 7px;
+  top: 16px;
+  background-color: var(--basic-white);
+  z-index: -1;
 }
 
 .slider-gadget-number {
@@ -510,17 +542,18 @@ p {
   line-height: 170px;
   color: var(--basic-white);
   z-index: -1;
-  padding-left: 330px;
+  left: 331px;
+  top: -10px;
 }
 
 
 .slider-item-info .text-header {
   padding-top: 75px;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
 }
 
 .slider-gadget-description {
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 
@@ -533,13 +566,16 @@ p {
   font-weight: 300;
   text-align: left;
   max-height: 72px;
-  margin-top: 51px;
+  margin-top: 49px;
+  border-collapse: collapse;
 }
 
 .gadget-info td {
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.1em;
+  padding-right: 59px;
+  padding-bottom: 14px;
 }
 
 .gadget-info th {

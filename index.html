@@ -87,9 +87,16 @@
     <section class="slider container">
       <h2 class="visually-hidden">Гаджет-превью</h2>
 
+      <!--кнопки переключения слайдов-->
+      <div class="slider-buttons">
+        <button class="first-slide-button" type="button">1</button>
+        <button class="second-slide-button" type="button">2</button>
+        <button class="third-slide-button" type="button">3</button>
+      </div>
+
       <!--первый слайд с гаджетом-->
       <h3 class="visually-hidden">Самый необходимый монопод</h3>
-      <div class="slider-item first-slide">
+      <div class="slider-item first-slide slider-show">
         <div class="slider-item-image">
           <img src="./img/index-slider-1-monopod.png" width="384" height="486" alt="Огроменный монопод">
         </div>
@@ -174,13 +181,6 @@
 
       </div>
 
-      <!--кнопки переключения слайдов-->
-      <div class="slider-buttons">
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">3</button>
-      </div>
-
     </section>
 
     <!--Список разделов-->
@@ -200,7 +200,7 @@
             <div class="gadget-menu-icon">
               <img src="./img/popular-monopods.svg" alt="Моноподы">
             </div>
-            <span class="gadget-menu-label">Моноподы для селфи</span>
+            <span class="gadget-menu-label">Моноподы<br> для селфи</span>
           </a>
         </li>
         <li class="gadget-menu">
@@ -506,6 +506,8 @@
         </section>
       </div>
   </footer>
+
+  <script src="./js/script.js"></script>
 
   <!--Всплывающая карта-->
   <section class="modal large-map container">
