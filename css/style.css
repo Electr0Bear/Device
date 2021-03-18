@@ -331,8 +331,14 @@ p {
 
 .user-navigation-item {
   width: 107px;
-  padding: 15px 0;
+  padding: 15px 0 15px 22px ;
+  
 }
+.user-navigation-link {
+  word-wrap: break-word;
+  position: relative;
+}
+
 
 .user-navigation-list li:nth-child(2) {
   width: 280px;
@@ -352,21 +358,28 @@ p {
 }
 
 .user-navigation-link::before {
-  content: url("../img/header-user-login-icon.svg");
-  margin-right: 13px;
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: -25px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/header-user-login-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   opacity: 1;
 }
 
 .user-navigation-link.logout-link::before {
-  content: none;
+  background-image: none;
 }
 
 .user-navigation-link.compare::before {
-  content: url("../img/header-compare-icon.svg");
+  background-image: url("../img/header-compare-icon.svg");
 }
 
 .user-navigation-link.cart::before {
-  content: url("../img/header-cart-icon.svg");
+  background-image: url("../img/header-cart-icon.svg");
 }
 
 /*ШАПКА - навигация по сайту*/
@@ -758,39 +771,48 @@ p {
   justify-content: flex-end;
 }
 
-.footer-user-navigation-item:first-child {
-  width: 225px;
+.footer-user-navigation-item {
   text-align: right;
+}
+
+.footer-user-navigation-item:first-child {
+  width: 300px;
 }
 
 .footer-user-navigation-link {
   color: var(--transparent-white-07);
-  padding-left: 43px;
+  padding-left: 65px;
+  position: relative;
+  word-wrap: break-word;
 }
 
 .footer-user-navigation-link::before {
-  content: url("../img/footer-user-icon.svg");
-  padding-right: 12px;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 37px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/footer-user-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .footer-user-navigation-link.logout-link {
   padding-left: 18px;
 }
 
-.footer-user-navigation-link.profile {
-  padding-left: 0;
-}
-
-.footer-user-navigation-link.logout-link::before {
-  content: none;
+.footer-user-navigation-link.logout-link::before{
+  background-image: none;
 }
 
 .footer-user-navigation-link.compare::before {
-  content: url("../img/footer-compare-icon.svg");
+  background-image: url("../img/footer-compare-icon.svg");
 }
 
 .footer-user-navigation-link.cart::before {
-  content: url("../img/footer-cart-icon.svg");
+  background-image: url("../img/footer-cart-icon.svg");
+  
 }
 
 .footer-user-navigation-link:hover {
@@ -1196,7 +1218,7 @@ button {
   position: relative;
   width: 360px;
   margin-right: 40px;
-  margin-bottom: 47px;
+  margin-bottom: 49px;
 }
 
 .product-item:nth-child(3),
