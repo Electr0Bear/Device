@@ -22,35 +22,25 @@ for (let i = 0; i < sliderSelectorArray.length; i++) {
   });
 }
 
+const servicesSelectorSection = document.querySelector('.services-buttons');
+const servicesSelectorArray = servicesSelectorSection.querySelectorAll('.button');
+const servicesInfoArray = document.querySelectorAll('.service-info');
+
+for (let i = 0; i < servicesSelectorArray.length; i++) {
+  servicesSelectorArray[i].addEventListener('click', evt => {
+    evt.preventDefault();
+    if(!servicesInfoArray[i].classList.contains('services-info-show') && !servicesSelectorArray[i].classList.contains('button-black')) {
+      for (let j = 0; j < servicesInfoArray.length; j++) {
+        if (servicesInfoArray[j].classList.contains('services-info-show') && servicesSelectorArray[j].classList.contains('button-black')) {
+          servicesInfoArray[j].classList.toggle('services-info-show');
+          servicesSelectorArray[j].classList.toggle('button-black')
+        }
+      }
+      servicesInfoArray[i].classList.toggle('services-info-show');
+      servicesSelectorArray[i].classList.toggle('button-black');
+    }
+  });
+}
 
 
-
-
-const deliveryButton = document.querySelector('.delivery-button');
-const guaranteeButton = document.querySelector('.guarantee-button');
-const creditButton = document.querySelector('.credit-button');
-const deliveryInfo = document.querySelector('.delivery-info');
-const guaranteeInfo = document.querySelector('.guarantee-info');
-const creditInfo = document.querySelector('.credit-info');
-
-deliveryButton.addEventListener('click', evt => {
-  evt.preventDefault();
-  deliveryInfo.classList.add('del-gr-cr-show');
-  guaranteeInfo.classList.remove('del-gr-cr-show');
-  creditInfo.classList.remove('del-gr-cr-show');
-});
-
-guaranteeButton.addEventListener('click', evt => {
-  evt.preventDefault();
-  deliveryInfo.classList.remove('del-gr-cr-show');
-  guaranteeInfo.classList.add('del-gr-cr-show');
-  creditInfo.classList.remove('del-gr-cr-show');
-});
-
-creditButton.addEventListener('click', evt => {
-  evt.preventDefault();
-  deliveryInfo.classList.remove('del-gr-cr-show');
-  guaranteeInfo.classList.remove('del-gr-cr-show');
-  creditInfo.classList.add('del-gr-cr-show');
-})
 
