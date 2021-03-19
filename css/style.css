@@ -473,7 +473,7 @@ p {
   margin-bottom: 101px;
   position: relative;
 }
-.slider-buttons{
+.slider-selectors {
   position: absolute;
   bottom: 150px;
   right: 88px;
@@ -633,14 +633,16 @@ p {
 
 /*ГЛАВНАЯ - доставка, гарантии, кредит*/
 .delivery-guaranties-credit {
-  background-image: url("../img/delivery-gray-rectangle.svg");
+  background-image: linear-gradient(#fff 100px,#e5e5e5 100px);
+  padding-top: 20px;
+  padding-bottom: 60px;
+  margin-bottom: 116px;
 }
 
 .delivery-guaranties-credit-wrapper {
   display: grid;
   grid-template-columns: 284px auto;
   gap: 116px;
-  margin-bottom: 90px;
 }
 
 .delivery-guaranties-credit-buttons {
@@ -650,13 +652,17 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  padding: 55px 0 55px 0;
 }
 
 .delivery-guaranties-credit-buttons li {
   display: block;
   height: 40px;
-  margin-bottom: 30px;
+  width: 160px;
+}
+
+.delivery-guaranties-credit-buttons li:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .button-black:active {
@@ -665,16 +671,32 @@ p {
   color: var(--special-yellow-dark);
 }
 
-.delivery-guaranties-credit-info {
-  line-height: 30px;
+.delivery-guaranties-credit-info-wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 }
 
-.delivery-guaranties-credit-info li {
+.delivery-guaranties-credit-info {
+  line-height: 30px;
   display: block;
-  max-height: 206px;
+}
+
+.delivery-guaranties-credit-info h3 {
+  letter-spacing: 0.2em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.delivery-info,
+.guarantee-info,
+.credit-info {
+  display: none;
+}
+
+.del-gr-cr-show {
+  display: block;
 }
 
 .delivery-guaranties-credit-info .delivery-guaranties-credit-description {
@@ -688,6 +710,7 @@ p {
 }
 
 .guarantee-info {
+  
   background-image: url("../img/guarantee-icon.svg");
   background-repeat: no-repeat;
   background-position: 100% 50%;
