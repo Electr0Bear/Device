@@ -163,8 +163,8 @@ p {
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   text-align: center;
   background: url("../img/button-rectangle.svg") 50% 50% repeat-x;
   letter-spacing: 0.2em;
@@ -590,7 +590,7 @@ p {
   display: grid;
   grid-template-columns: repeat(6, 160px);
   gap: 40px;
-  margin-bottom: 69px;
+  margin-bottom: 85px;
 }
 
 .gadget-menu a {
@@ -634,22 +634,20 @@ p {
 /*ГЛАВНАЯ - доставка, гарантии, кредит*/
 .services {
   background-image: linear-gradient(#fff 100px,#e5e5e5 100px);
-  padding-top: 20px;
-  padding-bottom: 60px;
-  margin-bottom: 116px;
+  padding-bottom: 68px;
+  margin-bottom: 90px;
 }
 
 .services-wrapper {
   display: grid;
-  grid-template-columns: 284px auto;
+  grid-template-columns: 284px 1fr;
   gap: 116px;
   align-items: center;
 }
 
 .services-buttons {
   border-right: 7px solid var(--basic-black);
-  width: 277px;
-  padding: 55px 0 55px 0;
+  padding: 80px 0 78px 0;
 }
 
 .delivery-button,
@@ -660,7 +658,7 @@ p {
 }
 
 .services-buttons li:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .button-black {
@@ -695,9 +693,9 @@ p {
   display: block;
 }
 
-.services-info h3 {
+.services-info .text-header {
   letter-spacing: 0.2em;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 
@@ -712,26 +710,34 @@ p {
 }
 
 .services-description {
-  max-width: 574px;
+  max-width: 580px;
+  letter-spacing: 0.1em;
 }
 
-.delivery-info {
-  background-image: url("../img/delivery-guy-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
+.service-info {
+  position: relative;
 }
 
-.guarantee-info {
+.delivery-info::before {
+  content: url("../img/delivery-guy-icon.svg");
+  position: absolute;
+  right: 2px;
+  top: 0;
   
-  background-image: url("../img/guarantee-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
 }
 
-.credit-info {
-  background-image: url("../img/credit-guy-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
+.guarantee-info::before {
+  content: url("../img/guarantee-icon.svg");
+  position: absolute;
+  right: -15px;
+  top: -18px;
+}
+
+.credit-info::before {
+  content: url("../img/credit-guy-icon.svg");
+  position: absolute;
+  right: 8px;
+  top: -24px;
 }
 
 /*ГЛАВНАЯ - логотипы спонсоров*/
@@ -739,7 +745,7 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 260px);
   gap: 40px;
-  margin-bottom: 147px;
+  margin-bottom: 143px;
 }
 
 .brand-logo a {
@@ -772,7 +778,7 @@ p {
 .contacts::before {
   content: "";
   position: absolute;
-  top: -55px;
+  top: -57px;
   left: 0;
   width: 80px;
   height: 7px;
@@ -780,7 +786,7 @@ p {
 }
 
 .about-us .text-header {
-  margin-bottom: 42px;
+  margin-bottom: 41px;
   letter-spacing: 0.2em;
 }
 
@@ -792,12 +798,12 @@ p {
   font-family: var(--gilroy-font);
   font-weight: 800;
   font-size: 16px;
-  margin-top: 60px;
-  margin-bottom: 84px;
+  padding-top: 59px;
+  padding-bottom: 68px;
 }
 
-.delivery-options li {
-  margin-top: 13px;
+.delivery-options li:not(:first-child) {
+  margin-top: 15px;
 }
 
 .delivery-options li::before {
@@ -805,12 +811,16 @@ p {
   padding-right: 24px;
 }
 
+.about-us-button {
+  width: 260px;
+}
+
 /*ФУТЕР*/
 .main-footer {
   background-color: var(--basic-dark);
   color: var(--basic-white);
   padding-top: 46px;
-  padding-bottom: 65px;
+  padding-bottom: 58px;
 }
 
 .layout-main-footer {
