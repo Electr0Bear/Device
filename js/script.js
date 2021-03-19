@@ -1,3 +1,4 @@
+//главная - слайдер
 const sliderSelectorSection = document.querySelector('.slider-selectors');
 const sliderSelectorArray = sliderSelectorSection.querySelectorAll('.slider-selector');
 const sliderItemArray = document.querySelectorAll('.slider-item');
@@ -22,6 +23,7 @@ for (let i = 0; i < sliderSelectorArray.length; i++) {
   });
 }
 
+//главная - доставка-гарантии-кредит
 const servicesSelectorSection = document.querySelector('.services-buttons');
 const servicesSelectorArray = servicesSelectorSection.querySelectorAll('.button');
 const servicesInfoArray = document.querySelectorAll('.service-info');
@@ -42,5 +44,19 @@ for (let i = 0; i < servicesSelectorArray.length; i++) {
   });
 }
 
+//главная - всплывающая карта
+const mapShow = document.querySelector('.small-map');
+const mapPopup = document.querySelector('.modal-map');
+const mapClose = document.querySelector('.map-close-button');
+
+mapShow.addEventListener('click', evt => {
+  evt.preventDefault();
+  mapPopup.classList.add('modal-show');
+})
+
+mapClose.addEventListener('click', evt => {
+  evt.preventDefault();
+  mapPopup.classList.remove('modal-show');
+})
 
 

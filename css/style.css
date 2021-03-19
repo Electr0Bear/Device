@@ -331,9 +331,10 @@ p {
 
 .user-navigation-item {
   width: 107px;
-  padding: 15px 0 15px 22px ;
-  
+  padding: 15px 0 15px 22px;
+
 }
+
 .user-navigation-link {
   word-wrap: break-word;
   position: relative;
@@ -473,11 +474,12 @@ p {
   margin-bottom: 101px;
   position: relative;
 }
+
 .slider-selectors {
   position: absolute;
   bottom: 150px;
   right: 88px;
-  z-index: 5;
+  z-index: 1;
   cursor: pointer;
 }
 
@@ -633,7 +635,7 @@ p {
 
 /*ГЛАВНАЯ - доставка, гарантии, кредит*/
 .services {
-  background-image: linear-gradient(#fff 100px,#e5e5e5 100px);
+  background-image: linear-gradient(#fff 100px, #e5e5e5 100px);
   padding-bottom: 68px;
   margin-bottom: 90px;
 }
@@ -665,7 +667,7 @@ p {
   position: relative;
   background-image: none;
   color: var(--special-yellow-dark);
-  
+
 }
 
 .button-black::before {
@@ -723,7 +725,7 @@ p {
   position: absolute;
   right: 2px;
   top: 0;
-  
+
 }
 
 .guarantee-info::before {
@@ -811,6 +813,10 @@ p {
   padding-right: 24px;
 }
 
+.small-map {
+  cursor: pointer;
+}
+
 .about-us-button {
   width: 260px;
 }
@@ -883,7 +889,7 @@ p {
   padding-left: 18px;
 }
 
-.footer-user-navigation-link.logout-link::before{
+.footer-user-navigation-link.logout-link::before {
   background-image: none;
 }
 
@@ -893,7 +899,7 @@ p {
 
 .footer-user-navigation-link.cart::before {
   background-image: url("../img/footer-cart-icon.svg");
-  
+
 }
 
 .footer-user-navigation-link:hover {
@@ -1011,15 +1017,57 @@ p {
 }
 
 /*ГЛАВНАЯ всплывающие окна*/
-.modal {
-  text-align: center;
+
+.modal-button:active {
+  color: var(--transparent-black-03);
 }
 
-.client-feedback {
+.modal-close-button {
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.modal-close-button:hover circle {
+  opacity: 1;
+}
+
+.modal-close-button:active circle {
+  opacity: 0.3;
+}
+
+
+/*КАРТА*/
+.modal-map {
+  display: none;
+}
+
+.large-map-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+  height: 558px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/*ФОРМА ОБРАТНОЙ СВЯЗИ*/
+.modal-feedback {
+  display: none;
   font-family: var(--gilroy-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
+}
+
+.feedback-wrapper {
+  width: 960px;
+  height: 550px;
+  position: relative;
 }
 
 .feedback-form-item {
@@ -1051,31 +1099,18 @@ p {
   outline: none;
 }
 */
-button {
-  border: none;
-}
 
-.modal-button:active {
-  color: var(--transparent-black-03);
+.modal-show {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -275px;
+  margin-left: -480px;
+  z-index: 2;
 }
-
-.modal-close-button {
-  border: 0;
-  background: transparent;
-}
-
-.modal-close-button:hover circle {
-  opacity: 1;
-}
-
-.modal-close-button:active circle {
-  opacity: 0.3;
-}
-
 
 /*КАТАЛОГ*/
-
-
 /*КАТАЛОГ - хлебные крошки*/
 .bredcumbs-wrapper {
   padding-top: 42px;
