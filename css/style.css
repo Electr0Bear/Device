@@ -1,4 +1,4 @@
-/*fonts*/
+/*шрифты*/
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy"), local("Gilroy-Bold"),
@@ -35,7 +35,40 @@
   font-style: normal;
 }
 
-/* variables*/
+/*анимация*/
+@keyframes popupShow {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0
+  }
+
+  20% {
+    transform: scale(0.2, 0.2);
+    opacity: 0.2;
+  }
+
+  40% {
+    transform: scale(0.4, 0.4);
+    opacity: 0.4;
+  }
+
+  60% {
+    transform: scale(0.6, 0.6);
+    opacity: 0.6;
+  }
+
+  80% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+
+/* переменные*/
 :root {
   --basic-white: #fff;
   --transparent-white-03: rgba(255, 255, 255, 0.3);
@@ -1037,7 +1070,9 @@ input[type="radio"] {
 /*ГЛАВНАЯ всплывающие окна*/
 
 .modal {
+  animation-name: popupShow;
   box-shadow: 0 10px 20px var(--transparent-black-02);
+  animation-duration: 0.3s;
 }
 
 .modal-button:active {
@@ -1362,7 +1397,7 @@ input[type="radio"] {
   background-position: 50% 50%;
 }
 
-input[type="checkbox"]:checked ~ .checkbox::before {
+input[type="checkbox"]:checked~.checkbox::before {
   background-image: url("../img/catalog-filter-tick.svg");
 }
 
@@ -1398,7 +1433,7 @@ input[type="checkbox"]:checked ~ .checkbox::before {
   background-position: 50% 50%;
 }
 
-input[type="radio"]:checked ~ .radio::before {
+input[type="radio"]:checked~.radio::before {
   box-shadow: inset 0 0 0 6px var(--basic-grey-light);
   background-color: var(--basic-black);
 }
