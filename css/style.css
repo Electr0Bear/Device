@@ -219,21 +219,20 @@ p {
 .searchbar-form-field {
   background-color: transparent;
   outline: none;
-  width: 317px;
+  width: 335px;
   min-height: 50px;
-  padding-right: 15px;
+  padding: 15px 15px 15px 20px;
   border: 0;
-  border-bottom: 2px solid transparent;
+  
 }
 
 .searchbar-form-label {
   display: inline-block;
   vertical-align: middle;
-  width: 25px;
+  width: 16px;
   height: 16px;
   background-image: url("../img/header-searchbar-icon.svg");
   background-repeat: no-repeat;
-  background-position: 3px 1px;
 }
 
 .searchbar-form-field::placeholder {
@@ -277,7 +276,7 @@ p {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  min-height: 50px;
+  min-height: 48px;
   width: 85px;
   text-align: center;
   border: 2px solid var(--basic-black);
@@ -302,10 +301,10 @@ p {
 .searchbar-form-field:focus~.searchbar-button::before {
   content: "";
   position: absolute;
-  left: -352px;
+  left: -357px;
   bottom: -2px;
   display: block;
-  width: 355px;
+  width: 365px;
   height: 2px;
   background-color: var(--basic-black);
 }
@@ -477,10 +476,27 @@ p {
 
 .slider-selectors {
   position: absolute;
-  bottom: 150px;
-  right: 88px;
+  bottom: 149px;
+  right: 94px;
   z-index: 1;
+
+}
+
+.slider-selector {
+  position: relative;
   cursor: pointer;
+  border: 1px solid var(--basic-black);
+  border-radius: 50%;
+  background-color: transparent;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin-right: 14px;
+}
+
+.slider-selector-active {
+  box-shadow: inset 0 0 0 2px var(--basic-white),
+    inset 0 0 0 3px var(--basic-black);
 }
 
 .slider-item {
@@ -568,7 +584,7 @@ p {
   font-weight: 300;
   text-align: left;
   max-height: 72px;
-  margin-top: 49px;
+  margin-top: 51px;
   border-collapse: collapse;
 }
 
@@ -1080,7 +1096,7 @@ p {
 }
 
 .label-item,
-.feedback-form-item{
+.feedback-form-item {
   display: block;
   width: 100%;
 }
@@ -1089,6 +1105,7 @@ p {
   padding-right: 20px;
   padding-bottom: 31px;
 }
+
 .e-mail-input {
   padding-left: 20px;
 }

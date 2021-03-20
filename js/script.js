@@ -14,11 +14,13 @@ for (let i = 0; i < sliderSelectorArray.length; i++) {
           sliderItemArray[j].classList.toggle('slider-show');
           console.log('скрывает слайд:');
           console.log(sliderItemArray[j]);
+          sliderSelectorArray[j].classList.toggle('slider-selector-active');
         }
       }
       sliderItemArray[i].classList.toggle('slider-show');
       console.log('показывает слайд:');
       console.log(sliderItemArray[i]);
+      sliderSelectorArray[i].classList.toggle('slider-selector-active');
     }
   });
 }
