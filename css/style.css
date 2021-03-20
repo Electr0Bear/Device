@@ -138,7 +138,9 @@ p {
   display: none
 }
 
-.visually-hidden {
+.visually-hidden,
+input[type="checkbox"],
+input[type="radio"] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -223,7 +225,7 @@ p {
   min-height: 50px;
   padding: 15px 15px 15px 20px;
   border: 0;
-  
+
 }
 
 .searchbar-form-label {
@@ -1275,6 +1277,11 @@ p {
   letter-spacing: 0.1em;
 }
 
+.filter-item-header.extra-padding {
+  padding-top: 15px;
+  padding-bottom: 31px;
+}
+
 /*КАТАЛОГ - основная секция - фильтр по стоимости*/
 .filter-range {
   height: 2px;
@@ -1326,13 +1333,74 @@ p {
 }
 
 /*КАТАЛОГ - основная секция - фильтр по цвету*/
-.filter-color-list li:not(:last-child) {
+.filter-color-item {
+  position: relative;
+}
+
+.filter-color-item:not(:last-child) {
   padding-bottom: 20px;
 }
 
+.checkbox,
+.radio {
+  padding-left: 42px;
+  cursor: pointer;
+}
+
+.checkbox::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  border: 2px solid var(--basic-black);
+  border-radius: 2px;
+  width: 24px;
+  height: 24px;
+  top: -3px;
+  left: 0;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+input[type="checkbox"]:checked ~ .checkbox::before {
+  background-image: url("../img/catalog-filter-tick.svg");
+}
+
 /*КАТАЛОГ - основная секция - фильтр по наличию BT*/
-.bluetooth-filter-choice li:first-child {
+.bluetooth-section .filter-item-header {
+  padding-bottom: 32px;
+}
+
+.filter-bluetooth li:first-child {
   padding-bottom: 20px;
+}
+
+.filter-bluetooth-item {
+  position: relative;
+}
+
+.radio {
+  padding-left: 40px;
+}
+
+.radio::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  border: 2px solid var(--basic-black);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  top: -3px;
+  left: 0;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+input[type="radio"]:checked ~ .radio::before {
+  box-shadow: inset 0 0 0 6px var(--basic-grey-light);
+  background-color: var(--basic-black);
 }
 
 /*КАТАЛОГ - сортировка товаров*/
