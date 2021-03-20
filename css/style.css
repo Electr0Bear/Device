@@ -457,31 +457,30 @@ input[type="radio"] {
   z-index: 2;
   display: none;
   width: 1160px;
-  padding: 22px 60px 33px 60px;
+  padding: 28px 60px 38px 60px;
   background-color: var(--special-yellow)
 }
 
 .header-subcatalog-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 540px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: min-content min-content min-content;
+  gap: 11px;
+  width: 530px;
   font-weight: 300;
   font-size: 15px;
-  line-height: 36px;
+  line-height: 25px;
   font-family: var(--open-sans-font);
   text-transform: none;
   letter-spacing: normal;
 }
 
-.header-subcatalog-list li {
-  display: flex;
-  flex-direction: column;
-  padding-right: 64px;
+.header-subcatalog-list li:not(:nth-child(3)){
+  padding-right: 47px;
 }
 
 .header-subcatalog-list li:last-child {
-  padding: 0;
+  grid-column: 1 / 2;
 }
 
 .header-catalog-link:hover+.header-subcatalog,
