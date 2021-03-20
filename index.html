@@ -383,7 +383,7 @@
           <img class="small-map" src="./img/map-small.jpg" width="560" height="222" alt="Расположение нашего офиса">
         </div>
         <div class="about-us-button">
-          <a class="button" href="blank.html">Напишите нам</a>
+          <a class="button feedback-button" href="blank.html">Напишите нам</a>
         </div>
       </section>
 
@@ -503,10 +503,10 @@
       </div>
   </footer>
 
-  
+
 
   <!--Всплывающая карта-->
-  <section class="modal-map">
+  <section class="modal modal-map">
     <h2 class="visually-hidden">Разположение нашего офиса</h2>
     <div class="large-map-wrapper">
       <img src="./img/map-big.jpg" alt="Расположение нашего офиса">
@@ -526,22 +526,29 @@
 
 
   <!--высплывающая форма обратной связи с магазином-->
-  <section class="modal-feedback">
+  <section class="modal modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <div class="feedback-wrapper">
       <form class="feedback-form" action=" https://echo.htmlacademy.ru" method="POST">
-        <label for="name-input">Ваше имя:</label>
-        <input class="feedback-form-item" type="text" name="name-lastname" placeholder="Имя Фамилия" required
-          id="name-input">
-        <label for="e-mail-input">Ваш e-mail:</label>
-        <input class="feedback-form-item" type="email" name="e-mail" placeholder="email@example.com" required
-          id="e-mail-input">
-        <label for="textmessage-input">Текст письма:</label>
-        <textarea class="feedback-form-item" name="message" id="textmessage-input" cols="50" rows="10"
-          placeholder="В свободной форме" required></textarea>
+        <div class="name-input">
+          <label class="label-item" for="name-input">Ваше имя:</label>
+          <input class="feedback-form-item" type="text" name="name-lastname" placeholder="Имя Фамилия" required
+            id="name-input">
+        </div>
+        <div class="e-mail-input">
+          <label class="label-item" for="e-mail-input">Ваш e-mail:</label>
+          <input class="feedback-form-item" type="email" name="e-mail" placeholder="email@example.com" required
+            id="e-mail-input">
+        </div>
+        <div class="textmessage-input">
+          <label class="label-item" for="textmessage-input">Текст письма:</label>
+          <textarea class="feedback-form-item" name="message" id="textmessage-input" cols="50" rows="7"
+            placeholder="В свободной форме" required></textarea>
+        </div>
+
         <button class="button modal-button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close-button" type="button">
+      <button class="feedback-close-button modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
         <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle opacity="0.5" cx="27.5" cy="27.5" r="27.5" fill="#F0C52E" />

@@ -44,7 +44,7 @@ for (let i = 0; i < servicesSelectorArray.length; i++) {
   });
 }
 
-//главная - всплывающая карта
+//главная - всплывающие окна
 const mapShow = document.querySelector('.small-map');
 const mapPopup = document.querySelector('.modal-map');
 const mapClose = document.querySelector('.map-close-button');
@@ -52,11 +52,27 @@ const mapClose = document.querySelector('.map-close-button');
 mapShow.addEventListener('click', evt => {
   evt.preventDefault();
   mapPopup.classList.add('modal-show');
-})
+});
 
 mapClose.addEventListener('click', evt => {
   evt.preventDefault();
+  console.log('нажата кнопка закрытия карты');
   mapPopup.classList.remove('modal-show');
-})
+});
+
+const feedbackShow = document.querySelector('.feedback-button');
+const feedbackPopup = document.querySelector('.modal-feedback');
+const feedbackClose = document.querySelector('.feedback-close-button');
+
+feedbackShow.addEventListener('click', evt => {
+  evt.preventDefault();
+  feedbackPopup.classList.add('modal-show');
+});
+
+feedbackClose.addEventListener('click', evt => {
+  evt.preventDefault();
+  console.log('нажата кнопка закрытия формы');
+  feedbackPopup.classList.remove('modal-show');
+});
 
 
