@@ -78,10 +78,11 @@ feedbackClose.addEventListener('click', evt => {
 });
 
 
-document.addEventListener('keypress', evt => {
-  if(evt.code === "Escape") {
+document.addEventListener('keyup', evt => {
+  if (evt.code == "Escape") {
     if (mapPopup.classList.contains('modal-show') || feedbackPopup.classList.contains('modal-show')) {
-      document.getElementById('.modal').remove('modal-show');
+      mapPopup.classList.remove('modal-show');
+      feedbackPopup.classList.remove('modal-show');
     }
   } 
 });
