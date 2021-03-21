@@ -99,9 +99,7 @@
             как Бен Стиллер!</p>
           <p class="slider-gadget-description">Самая длинная палка для селфи доступна в нашем магазине.<br>
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-
           <a class="button slider-button" href="#">Подробнее</a>
-
           <table class="gadget-info">
             <tr>
               <td>8,5 м</td>
@@ -115,7 +113,6 @@
             </tr>
           </table>
         </div>
-
       </div>
 
       <!--второй слайд с гаджетом-->
@@ -130,9 +127,7 @@
             правильно!</p>
           <p class="slider-gadget-description">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
             не пропускать занятия и соблюдать диету.</p>
-
           <a class="button slider-button" href="#">Подробнее</a>
-
           <table class="gadget-info">
             <tr>
               <td>48 часов</td>
@@ -157,9 +152,7 @@
           <p class="slider-gadget-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
             мощным лазером, замаскированным под стандартную камеру.
           </p>
-
           <a class="button slider-button" href="#">Подробнее</a>
-
           <table class="gadget-info">
             <tr>
               <td>800 м</td>
@@ -171,9 +164,7 @@
             </tr>
           </table>
         </div>
-
       </div>
-
     </section>
 
     <!--Список разделов-->
@@ -338,9 +329,7 @@
       </ul>
     </section>
 
-
     <div class="about-us container">
-
       <!--О нас-->
       <section class="about-us-info">
         <h2 class="text-header">О нас</h2>
@@ -373,18 +362,18 @@
             Всякое бывает.</p>
 
           <!--Карта-->
-          <img class="small-map" src="./img/map-small.jpg" width="560" height="222" tabindex="0" alt="Расположение нашего офиса">
+          <a class="small-map" href="#">
+            <img src="./img/map-small.jpg" alt="Расположение нашего офиса">
+          </a>
         </div>
         <div class="about-us-button">
           <a class="button feedback-button" href="blank.html">Напишите нам</a>
         </div>
       </section>
-
     </div>
-
   </main>
 
-  <!--Онсновной футер-->
+  <!--Основной футер-->
   <footer class="main-footer">
     <div class="layout-main-footer container">
       <div class="layout-main-footer-top-row">
@@ -496,14 +485,12 @@
       </div>
   </footer>
 
-
-
   <!--Всплывающая карта-->
   <section class="modal modal-map">
     <h2 class="visually-hidden">Разположение нашего офиса</h2>
     <div class="large-map-wrapper">
       <img src="./img/map-big.jpg" alt="Расположение нашего офиса">
-      <button class="map-close-button modal-close-button" href="">
+      <button class="map-close-button modal-close-button">
         <span class="visually-hidden">Закрыть</span>
         <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle opacity="0.5" cx="27.5" cy="27.5" r="27.5" fill="#F0C52E" />
@@ -517,7 +504,6 @@
     </div>
   </section>
 
-
   <!--высплывающая форма обратной связи с магазином-->
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -526,7 +512,7 @@
         <div class="name-input">
           <label class="label-item" for="name-input">Ваше имя:</label>
           <input class="feedback-form-item" type="text" name="name-lastname" placeholder="Имя Фамилия" required
-            id="name-input">
+            id="name-input" autofocus>
         </div>
         <div class="e-mail-input">
           <label class="label-item" for="e-mail-input">Ваш e-mail:</label>
