@@ -102,6 +102,8 @@
   outline-offset: -2px;
 }*/
 
+
+
 * *,
 ::before,
 ::after {
@@ -1455,7 +1457,7 @@ input[type="radio"]:checked~.radio::before {
 }
 
 .filter-item label:hover,
-.filter-item label:focus {
+.filter-item input:focus+.checkbox{
   opacity: 0.6;
 }
 
