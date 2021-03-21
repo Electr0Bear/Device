@@ -5,20 +5,14 @@
   <meta charset="utf-8">
   <title>Каталог продукции - интернет-магазин Девайс</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <!--32x32-->
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./css/normalize.css">
-  
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="page-body">
-
-  <!-- Основная шапка с навигацией -->
   <header class="main-header container">
-
     <a class="main-header-logo" href="./index.html">
-      <!--<img src="./img/logo-main.svg" width="163" height="35" alt="DEVICE">-->
       <h3 class="visually-hidden">Интернет-магазин Device</h3>
       <svg width="163" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -26,10 +20,7 @@
           fill="#000" />
       </svg>
     </a>
-
     <nav class="header-main-navigation">
-
-      <!--Поиск по сайту-->
       <ul class="user-navigation-list">
         <li class="searchbar">
           <form class="searchbar-form" action=" https://echo.htmlacademy.ru" method="get">
@@ -38,7 +29,6 @@
             <button class="searchbar-button" type="submit">Найти</button>
           </form>
         </li>
-        <!--Кабинет пользователя-->
         <li class="user-navigation-item">
           <a class="user-navigation-link login hidden" href="#">Войти</a>
           <a class="user-navigation-link profile" href="#">Валентин Петухов</a>
@@ -51,7 +41,6 @@
           <a class="user-navigation-link cart" href="#">Корзина</a>
         </li>
       </ul>
-      <!--Меню навигации по сайту-->
       <ul class="header-navigation-menu-list">
         <li class="header-catalog-menu">
           <a class="header-catalog-link" href="#">Каталог товаров</a>
@@ -74,7 +63,6 @@
   </header>
 
   <main>
-    <!--хлебные крошки-->
     <div class="bredcumbs-wrapper container">
       <h1 class="text-header">Моноподы для селфи</h1>
       <ul class="breadcrumbs-nav open-sans-small-text">
@@ -84,22 +72,17 @@
       </ul>
     </div>
 
-    <!--раздел с товарами-->
     <section class="catalog-main-section">
       <h2 class="visually-hidden">Каталог товаров</h2>
       <div class="catalog-grid-container">
-        <!--пустое поле слева-->
         <div class="grid-layout-left">
           <div class="grid-layout-left-top"></div>
           <div class="grid-layout-left-bottom"></div>
         </div>
-        <!--основное поле-->
         <div class="grid-layout-main">
-          <!--фильтр - заголовок-->
           <div class="grid-layout-main-filter-top">
             <h2 class="filter-header">Фильтр:</h2>
           </div>
-          <!--сортировка-->
           <div class="grid-layout-main-goods-top">
             <div class="sorting">
               <h2 class="sorting-header">Сортировка:</h2>
@@ -122,10 +105,8 @@
               </ul>
             </div>
           </div>
-          <!--фильтр-->
           <div class="grid-layout-main-filter-main">
             <form class="filter-main" action="https://echo.htmlacademy.ru" method="GET">
-              <!--ползунок стоимости-->
               <div class="filter-item">
                 <fieldset>
                   <legend class="filter-item-header">Стоимость</legend>
@@ -143,7 +124,6 @@
                   </div>
                 </fieldset>
               </div>
-              <!--выбор цвета-->
               <div class="filter-item">
                 <fieldset>
                   <legend class="filter-item-header extra-padding">Цвет</legend>
@@ -171,7 +151,6 @@
                   </ul>
                 </fieldset>
               </div>
-              <!--наличие BT-->
               <div class="filter-item">
                 <fieldset class="bluetooth-section">
                   <legend class="filter-item-header">Bluetooth</legend>
@@ -190,7 +169,6 @@
               <button class="button catalog-filter-button" type="submit">Показать</button>
             </form>
           </div>
-          <!--каталог с товарами-->
           <div class="grid-layout-main-goods-main">
             <ul class="product-list">
               <li class="product-item">
@@ -263,7 +241,6 @@
                 </div>
               </li>
             </ul>
-            <!--навигация по товарам-->
             <ul class="items-nav">
               <li class="items-navbutton">
                 <a class="items-navbutton-back" href="#">Назад</a>
@@ -287,7 +264,6 @@
             </ul>
           </div>
         </div>
-        <!--пустое поле справа-->
         <div class="grid-layout-right">
           <div class="grid-layout-right-top"></div>
           <div class="grid-layout-right-bottom"></div>
@@ -297,12 +273,10 @@
     </section>
   </main>
 
-  <!--Онсновной футер-->
   <footer class="main-footer">
     <div class="layout-main-footer container">
       <div class="layout-main-footer-top-row">
         <a class="main-footer-logo" href="./index.html">
-          <!--<img src="./img/logo-footer-main.svg" width="163" height="35" alt="DEVICE">-->
           <h3 class="visually-hidden">Интернет-магазин Device</h3>
           <svg width="163" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
@@ -317,7 +291,6 @@
             </defs>
           </svg>
         </a>
-
         <ul class="footer-user-navigation-list">
           <li class="footer-user-navigation-item">
             <a class="footer-user-navigation-link login hidden" href="#">Войти</a>
@@ -331,18 +304,15 @@
             <a class="footer-user-navigation-link cart" href="#">Корзина</a>
           </li>
         </ul>
-
       </div>
 
       <div class="layout-main-footer-contacts">
         <address>г. Москва, ул. Строителей, 15</address>
-
         <ul class="bottom-footer-list">
           <li><a href="./index.html#delivery">Доставка</a></li>
           <li><a href="./index.html#guarantees">Гарантия</a></li>
           <li><a href="./index.html#how-to-find-us">Контакты</a></li>
         </ul>
-
         <p class="footer-contacts-phone">
           <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         </p>
@@ -355,7 +325,6 @@
           <ul>
             <li>
               <a class="footer-socials-button" href="#">
-                <!--<img src="./img/footer-socials-facebook.svg" width="32" height="32" alt="Facebook">-->
                 <h3 class="visually-hidden">Наша страница в Facebook</h3>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -366,7 +335,6 @@
             </li>
             <li>
               <a class="footer-socials-button" href="#">
-                <!--<img src="./img/footer-socials-instagramm.svg" width="32" height="32" alt="Instagramm">-->
                 <h3 class="visually-hidden">Наша страница в Instagramm</h3>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -377,7 +345,6 @@
             </li>
             <li>
               <a class="footer-socials-button" href="#">
-                <!--<img src="./img/footer-socials-twitter.svg" width="32" height="32" alt="Twitter">-->
                 <h3 class="visually-hidden">Наша страница в Twitter</h3>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -389,7 +356,6 @@
           </ul>
           <div class="footer-copyright-logo">
             <a href="#">
-              <!--<img src="./img/logo-footer-small.svg" width="26.94" height="34" alt="DEVICE">-->
               <h3 class="visually-hidden">Онлайн-школа HTMLAcademy</h3>
               <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
