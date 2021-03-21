@@ -464,7 +464,6 @@ input[type='radio'] {
   content: url('../img/header-catalog-menu-plus-icon.svg');
 }
 
-
 .header-subcatalog {
   position: absolute;
   z-index: 2;
@@ -504,9 +503,9 @@ input[type='radio'] {
   display: block;
 }
 
-.header-subcatalog:focus,
-.header-catalog-link:focus~.header-subcatalog,
-.header-subcatalog-list a:focus~.header-subcatalog {
+
+.header-catalog-link:focus~.header-subcatalog, 
+.header-subcatalog:focus {
   display: block;
 }
 
