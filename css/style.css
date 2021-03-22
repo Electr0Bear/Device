@@ -631,7 +631,7 @@ input[type='radio'] {
 }
 
 .fitness-tracker-label {
-  letter-spacing: .01em;
+  letter-spacing: .01em
 }
 
 .gadget-menu-icon {
@@ -645,7 +645,7 @@ input[type='radio'] {
   width: 160px;
   height: 160px;
   content: '';
-  background-image: url('../img/popular-vr.svg');
+  background-image: url(../img/popular-vr.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%
 }
@@ -655,7 +655,7 @@ input[type='radio'] {
   width: 160px;
   height: 160px;
   content: '';
-  background-image: url('../img/popular-monopods.svg');
+  background-image: url(../img/popular-monopods.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%
 }
@@ -665,7 +665,7 @@ input[type='radio'] {
   width: 160px;
   height: 160px;
   content: '';
-  background-image: url('../img/popular-action-cam.svg');
+  background-image: url(../img/popular-action-cam.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%
 }
@@ -675,7 +675,7 @@ input[type='radio'] {
   width: 160px;
   height: 160px;
   content: '';
-  background-image: url('../img/popular-fitness-tracker.svg');
+  background-image: url(../img/popular-fitness-tracker.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%
 }
@@ -685,7 +685,7 @@ input[type='radio'] {
   width: 160px;
   height: 160px;
   content: '';
-  background-image: url('../img/popular-smart-watch.svg');
+  background-image: url(../img/popular-smart-watch.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%
 }
@@ -695,7 +695,7 @@ input[type='radio'] {
   width: 160px;
   height: 160px;
   content: '';
-  background-image: url('../img/popular-copter.svg');
+  background-image: url(../img/popular-copter.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%
 }
@@ -1581,6 +1581,17 @@ input[type='radio'] {
   position: absolute;
   top: 29px;
   right: 27px
+}
+
+.new-gadget-icon::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 360px;
+  height: 380px;
+  background-image: url('../img/catalog-item-new-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 91% 9%;
 }
 
 .product-item-info {
