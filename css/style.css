@@ -630,17 +630,74 @@ input[type='radio'] {
   letter-spacing: .05em
 }
 
+.fitness-tracker-label {
+  letter-spacing: .01em;
+}
+
 .gadget-menu-icon {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   width: 160px;
   height: 160px;
   background-color: var(--special-yellow)
 }
 
-.gadget-menu-icon img {
-  margin: auto
+.virtual-reality-icon::before {
+  display: block;
+  width: 160px;
+  height: 160px;
+  content: '';
+  background-image: url('../img/popular-vr.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%
+}
+
+.monopod-icon::before {
+  display: block;
+  width: 160px;
+  height: 160px;
+  content: '';
+  background-image: url('../img/popular-monopods.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%
+}
+
+.action-cam-icon::before {
+  display: block;
+  width: 160px;
+  height: 160px;
+  content: '';
+  background-image: url('../img/popular-action-cam.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%
+}
+
+.fitness-tracker-icon::before {
+  display: block;
+  width: 160px;
+  height: 160px;
+  content: '';
+  background-image: url('../img/popular-fitness-tracker.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%
+}
+
+.smart-watch-icon::before {
+  display: block;
+  width: 160px;
+  height: 160px;
+  content: '';
+  background-image: url('../img/popular-smart-watch.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%
+}
+
+.copter-icon::before {
+  display: block;
+  width: 160px;
+  height: 160px;
+  content: '';
+  background-image: url('../img/popular-copter.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%
 }
 
 .gadget-menu:hover .gadget-menu-icon,
@@ -649,7 +706,7 @@ input[type='radio'] {
 }
 
 .gadget-menu:active .gadget-menu-label,
-.gadget-menu:active img {
+.gadget-menu:active ::before {
   opacity: .3
 }
 
@@ -1399,7 +1456,7 @@ input[type='radio'] {
 
 .filter-color-item.locked label {
   opacity: .25;
-  cursor: default;
+  cursor: default
 }
 
 .sorting {
