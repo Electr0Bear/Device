@@ -1480,6 +1480,10 @@ img {
   flex-wrap: wrap
 }
 
+.sorting-criteria-list {
+  max-width: 500px;
+}
+
 .sorting-criteria-item:not(:last-child) {
   margin-right: 30px
 }
