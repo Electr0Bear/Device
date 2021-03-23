@@ -77,7 +77,7 @@ if (window.location.href.indexOf('/index.html') !== -1) {
   });
 
   document.addEventListener('keyup', evt => {
-    if (evt.code === "Escape") {
+    if (evt.code === 'Escape') {
       evt.preventDefault();
       if (mapPopup.classList.contains('modal-show')) {
         mapPopup.classList.remove('modal-show');
