@@ -62,9 +62,11 @@
   --transparent-white-03: rgba(255, 255, 255, .3);
   --transparent-white-07: rgba(255, 255, 255, .7);
   --basic-black: #000;
+  --transparent-black-018: rgba(0, 0, 0, .18);
   --transparent-black-01: rgba(0, 0, 0, .1);
   --transparent-black-02: rgba(0, 0, 0, .2);
   --transparent-black-03: rgba(0, 0, 0, .3);
+  --transparent-black-04: rgba(0, 0, 0, .4);
   --transparent-black-06: rgba(0, 0, 0, .6);
   --transparent-black-08: rgba(0, 0, 0, .8);
   --basic-dark: #363636;
@@ -713,7 +715,7 @@ input[type='radio'] {
 .services {
   margin-bottom: 90px;
   padding-bottom: 68px;
-  background-image: linear-gradient(#fff 100px, #e5e5e5 100px)
+  background-image: linear-gradient(var(--basic-white) 100px, var(--basic-grey-light) 100px)
 }
 
 .services-wrapper {
@@ -1189,7 +1191,7 @@ input[type='radio'] {
 }
 
 .feedback-form-item::placeholder {
-  color: rgba(0, 0, 0, .4)
+  color: var(--transparent-black-04)
 }
 
 .feedback-form-item:focus {
@@ -1346,7 +1348,7 @@ input[type='radio'] {
   border: 8px solid var(--basic-white);
   border-radius: 50%;
   background-color: var(--basic-grey-extra-2);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, .18)
+  box-shadow: 0 2px 2px var(--transparent-black-018)
 }
 
 .control-max {
@@ -1589,9 +1591,9 @@ input[type='radio'] {
   content: '';
   width: 360px;
   height: 380px;
-  background-image: url('../img/catalog-item-new-icon.svg');
+  background-image: url(../img/catalog-item-new-icon.svg);
   background-repeat: no-repeat;
-  background-position: 91% 9%;
+  background-position: 91% 9%
 }
 
 .product-item-info {
