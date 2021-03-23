@@ -87,17 +87,19 @@
             <div class="sorting">
               <h2 class="sorting-header">Сортировка:</h2>
               <ul class="sorting-criteria-list open-sans-small-text list">
-                <li class="sorting-criteria-item"><a class=" active" href="#">По цене</a></li>
+                <li class="sorting-criteria-item"><a class="active" href="#">По цене</a></li>
                 <li class="sorting-criteria-item"><a class="" href="#">По типу</a></li>
                 <li class="sorting-criteria-item"><a class="" href="#">По популярности</a></li>
               </ul>
               <ul class="sorting-direction-list list">
                 <li><a class="sorting-up" href="#">
+                    <h3 class="visually-hidden">Тип сортировки от меньшего к большему</h3>
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 14H14L8.5 4L3 14Z" fill="black" fill-opacity="1" />
                     </svg>
                   </a></li>
                 <li><a class="sorting-down active" href="#">
+                    <h3 class="visually-hidden">Тип сортировки от большего к меньшему</h3>
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 4L3 4L8.5 14L14 4Z" fill="black" fill-opacity="1" />
                     </svg>
@@ -111,9 +113,14 @@
                 <fieldset>
                   <legend class="filter-item-header">Стоимость</legend>
                   <div class="filter-range">
+                    <h3 class="visually-hidden">Интерактивный ползунок фильтра по стоимости</h3>
                     <div class="filter-range-selected">
-                      <div class="filter-range-control control-min" tabindex="0"></div>
-                      <div class="filter-range-control control-max" tabindex="0"></div>
+                      <div class="filter-range-control control-min" tabindex="0">
+                        <h3 class="visually-hidden">Минимальная стоимость</h3>
+                      </div>
+                      <div class="filter-range-control control-max" tabindex="0">
+                        <h3 class="visually-hidden">Максимальная стоимость</h3>
+                      </div>
                     </div>
                   </div>
                   <div class="filter-price-min-max">
@@ -129,7 +136,8 @@
                   <legend class="filter-item-header extra-padding">Цвет</legend>
                   <ul class="filter-color-list open-sans-small-text list">
                     <li class="filter-color-item locked">
-                      <input class="visually-hidden" class="checkboxInput" type="checkbox" name="black" id="filter-black" checked>
+                      <input class="visually-hidden" class="checkboxInput" type="checkbox" name="black"
+                        id="filter-black" checked>
                       <label class="checkbox" for="filter-black">Чёрный</label>
                     </li>
                     <li class="filter-color-item">
