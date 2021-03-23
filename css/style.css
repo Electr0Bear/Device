@@ -1211,7 +1211,7 @@ img {
 }
 
 .bredcumbs-wrapper {
-  margin-bottom: 47px;
+  margin-bottom: 46px;
   padding-top: 42px;
   padding-left: 80px
 }
@@ -1259,11 +1259,17 @@ img {
 .grid-layout-main,
 .grid-layout-right {
   display: grid;
-  grid-template-rows: 70px auto
+  grid-template-rows: min-content auto
 }
 
 .grid-layout-main {
   grid-template-columns: 328px 1fr
+}
+
+.grid-layout-left-top,
+.grid-layout-right-top {
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .grid-layout-left-top,
@@ -1277,7 +1283,8 @@ img {
 }
 
 .grid-layout-main-filter-top {
-  padding: 25px 0 0 60px
+  padding-top: 25px;
+  padding-left: 60px;
 }
 
 .filter-header,
@@ -1462,7 +1469,9 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 25px 0 25px 72px
+  padding-top: 25px;
+  padding-left: 72px;
+  padding-bottom: 23px;
 }
 
 .sorting ul {
