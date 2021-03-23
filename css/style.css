@@ -124,17 +124,10 @@ img {
   height: auto
 }
 
-ul {
+.list {
   margin: 0;
   padding: 0;
   list-style-type: none
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0
 }
 
 .container {
@@ -147,16 +140,15 @@ p {
   font-family: var(--gilroy-font);
   font-size: 47px;
   font-weight: 800;
-  line-height: 58px
+  line-height: 58px;
+  margin: 0;
 }
 
 .hidden {
   display: none
 }
 
-.visually-hidden,
-input[type='checkbox'],
-input[type='radio'] {
+.visually-hidden {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -200,7 +192,7 @@ input[type='radio'] {
 }
 
 .header-main-navigation {
-  padding: 30px 60px 52px;
+  padding: 30px 60px 53px;
   background-color: var(--special-yellow)
 }
 
@@ -338,7 +330,7 @@ input[type='radio'] {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 35px
+  padding-bottom: 32px
 }
 
 .user-navigation-item {
@@ -447,7 +439,7 @@ input[type='radio'] {
   text-transform: none;
   grid-template-columns: auto auto auto;
   grid-template-rows: min-content min-content min-content;
-  gap: 11px
+  gap: 10px
 }
 
 .header-subcatalog-list li:not(:nth-child(3)) {
@@ -580,6 +572,7 @@ input[type='radio'] {
 }
 
 .slider-gadget-description {
+  margin: 0;
   padding-bottom: 50px
 }
 
@@ -647,7 +640,7 @@ input[type='radio'] {
   width: 160px;
   height: 160px;
   content: '';
-  background-image: url(../img/popular-vr.svg);
+  background-image: url('../img/popular-vr.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%
 }
@@ -657,9 +650,9 @@ input[type='radio'] {
   width: 160px;
   height: 160px;
   content: '';
-  background-image: url(../img/popular-monopods.svg);
+  background-image: url('../img/popular-monopods.svg');
   background-repeat: no-repeat;
-  background-position: 50% 50%
+  background-position: 50% 60%
 }
 
 .action-cam-icon::before {
@@ -667,7 +660,7 @@ input[type='radio'] {
   width: 160px;
   height: 160px;
   content: '';
-  background-image: url(../img/popular-action-cam.svg);
+  background-image: url('../img/popular-action-cam.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%
 }
@@ -677,7 +670,7 @@ input[type='radio'] {
   width: 160px;
   height: 160px;
   content: '';
-  background-image: url(../img/popular-fitness-tracker.svg);
+  background-image: url('../img/popular-fitness-tracker.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%
 }
@@ -687,7 +680,7 @@ input[type='radio'] {
   width: 160px;
   height: 160px;
   content: '';
-  background-image: url(../img/popular-smart-watch.svg);
+  background-image: url('../img/popular-smart-watch.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%
 }
@@ -697,7 +690,7 @@ input[type='radio'] {
   width: 160px;
   height: 160px;
   content: '';
-  background-image: url(../img/popular-copter.svg);
+  background-image: url('../img/popular-copter.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%
 }
@@ -789,6 +782,7 @@ input[type='radio'] {
 }
 
 .services-description {
+  margin: 0;
   max-width: 580px;
   letter-spacing: .1em
 }
@@ -867,7 +861,8 @@ input[type='radio'] {
   letter-spacing: .2em
 }
 
-.layout-about-us p:first-child {
+.layout-about-us p {
+  margin-top: 0;
   margin-bottom: 40px
 }
 
@@ -875,12 +870,12 @@ input[type='radio'] {
   font-family: var(--gilroy-font);
   font-size: 16px;
   font-weight: 800;
-  padding-top: 59px;
+  padding-top: 20px;
   padding-bottom: 68px
 }
 
 .delivery-options li:not(:first-child) {
-  margin-top: 15px
+  margin-top: 14px
 }
 
 .delivery-options li::before {
@@ -1035,6 +1030,7 @@ input[type='radio'] {
 }
 
 .footer-contacts-phone {
+  margin: 0;
   text-align: right
 }
 
@@ -1291,6 +1287,7 @@ input[type='radio'] {
   font-weight: 800;
   line-height: 20px;
   display: block;
+  margin: 0;
   padding-right: 74px;
   letter-spacing: .1em;
   text-transform: uppercase
@@ -1607,6 +1604,7 @@ input[type='radio'] {
   font-size: 18px;
   font-weight: 800;
   line-height: 22px;
+  margin: 0;
   width: 270px;
   letter-spacing: .05em
 }
@@ -1620,6 +1618,7 @@ input[type='radio'] {
   font-size: 16px;
   font-weight: 300;
   line-height: 18px;
+  margin: 0;
   padding-top: 3px;
   padding-right: 2px;
   letter-spacing: .05em
